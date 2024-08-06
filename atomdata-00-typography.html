@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>АТОМДАТА</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Flex:opsz,wdth,wght@8..144,120,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- wrapper inner -->
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+                        <div class="header-left">
+                            <div class="header-logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
+                            <div class="header-title">дата-центры<br> и&nbsp;облачные сервисы</div>
+                        </div>
+                        <div class="header-right">
+                            <div class="header-menu">
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Дата-центры<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-centers">
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-01.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Калининский</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-02.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Xelent</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-03.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Иннополис</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-04.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Storedata</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-05.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Москва-2</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-06.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Арктика</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-07.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Xelent-2</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu active">
+                                    <a href="#" class="header-menu-item-parent">Услуги и сервисы<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-menu">
+                                                        <div class="header-submenu-popup-menu-item active">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Облачные продукты</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-04.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-04.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Услуги ЦОД</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Сетевые услуги</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Аренда оборудования / Dedicated</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Информационная безопасность</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>VAS (Value-Added Service)</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Интеграционные проекты</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-submenu-popup-submenu">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Решения<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-submenu">
+                                                        <div class="header-submenu-popup-services">
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">ИТ без капитальных затрат</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Защита данных по требованиям регуляторов</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Лучшие практики перехода в&nbsp;облако</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-04.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Консолидация ИТ ландшафта в&nbsp;дата-центре</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Масштабирование по&nbsp;запросу</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Профессиональная поддержка и&nbsp;аутсорсинг</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Компания<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-about-menu">
+                                                        <ul>
+                                                            <li><a href="#">Компания</a></li>
+                                                            <li><a href="#">Партнеры</a></li>
+                                                            <li>
+                                                                <a href="#">Пресс-центр</a>
+                                                                <ul>
+                                                                    <li><a href="#">Новости</a></li>
+                                                                    <li><a href="#">СМИ о нас</a></li>
+                                                                    <li><a href="#">Видео</a></li>
+                                                                    <li><a href="#">Фотогалерея</a></li>
+                                                                    <li><a href="#">Фирменный стиль</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="header-submenu-popup-about-menu">
+                                                        <ul>
+                                                            <li><a href="#">Лицензии и сертификаты</a></li>
+                                                            <li><a href="#">Презентации</a></li>
+                                                            <li><a href="#">Карьера</a></li>
+                                                            <li>
+                                                                <a href="#">Закупки</a>
+                                                                <ul>
+                                                                    <li><a href="#">Активные закупки</a></li>
+                                                                    <li><a href="#">Реестр поставщиков</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Контакты</a></li>
+                                                            <li class="with-sep"><a href="#">Группа компаний АТОМДАТА</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="header-submenu-popup-about-news">
+                                                        <div class="header-submenu-popup-about-news-inner">
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-1.jpg" alt=""></div>
+                                                                <div class="title-small">Рыночный SLA с одними из самых дешёвых цен на рынке</div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-2.jpg" alt=""></div>
+                                                                <div class="title-small">Рыночный SLA с одними из самых дешёвых цен на рынке</div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-3.jpg" alt=""></div>
+                                                                <div class="title-small">Однако, не всегда перечисленные преимущества достаточны для выполнения </div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu with-list">
+                                    <a href="#" class="header-menu-item-parent">Документы<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-list">
+                                        <div class="header-submenu-list-content">
+                                            <div class="header-submenu-list-item"><a href="#">Реквизиты компании</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Раскрытие информации</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Политики</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Информационные сообщения</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-user">
+                                <a href="#" class="header-user-link"><svg><use xlink:href="images/sprite.svg#header-icon-user"></use></svg></a>
+                            </div>
+                            <div class="header-search">
+                                <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#header-icon-search"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <p class="display">Группа компаний АТОМДАТА</p>
+                    <p>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <h1>Группа компаний АТОМДАТА</h1>
+                    <p>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <h2>Группа компаний АТОМДАТА</h2>
+                    <p>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <h3>Группа компаний АТОМДАТА</h3>
+                    <p><span class="text-with-hint">Сетевая часть инфраструктуры<span class="text-with-hint-popup">Однако, не&nbsp;всегда перечисленные преимущества достаточны для выполнения требований всех информационных систем Клиента, поэтому одним из&nbsp;главным</span></span> базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <h4>Группа компаний АТОМДАТА</h4>
+                    <p><span class="text-with-hint">Сетевая часть инфраструктуры<span class="text-with-hint-popup">Однако, не&nbsp;всегда перечисленные преимущества достаточны для выполнения требований всех информационных систем Клиента, поэтому одним из&nbsp;главным</span></span> базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <p class="body-large">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <p>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <p class="body-small">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <div class="blockquote">
+                        <div class="blockquote-text">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</div>
+                        <div class="blockquote-author">Иван Иванов</div>
+                    </div>
+                    <p class="body-small">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    <h3>Группа компаний АТОМДАТА</h3>
+                    <ol>
+                        <li>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике,</li>
+                        <li>Позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</li>
+                        <li>Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000 серии</li>
+                        <li>А&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.<br> Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике,</li>
+                        <li>Позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</li>
+                        <li>Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000 серии</li>
+                        <li>А&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</li>
+                    </ol>
+                    <h3>Группа компаний АТОМДАТА</h3>
+                    <ul>
+                        <li>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике,</li>
+                        <li>Позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</li>
+                        <li>Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000 серии</li>
+                        <li>А&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.<br> Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике,</li>
+                        <li>Позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</li>
+                        <li>Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000 серии</li>
+                        <li>А&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</li>
+                    </ul>
+                    <div class="content-photo">
+                        <img src="files/typography.jpg" alt="">
+                        <p class="body-small">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+                    </div>
+                    <div class="centers-detail-info gallery-top">
+                        <div class="centers-detail-info-gallery">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="centers-detail-info-gallery-item" style="background-image:url(files/center-gallery-1.jpg)"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="centers-detail-info-gallery-item" style="background-image:url(files/center-gallery-5.jpg)"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="centers-detail-info-gallery-item" style="background-image:url(files/center-gallery-4.jpg)"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="body-small">Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы. Физически сетевое оборудование строится на&nbsp;двухуровневой Leaf-Spine архитектуре с&nbsp;использованием 10/25/100-Гбитных коммутаторов Cisco Nexus 9000&nbsp;серии, а&nbsp;также высокопроизводительных пограничных маршрутизаторов линейки Juniper ХХХ серии.</p>
+
+                    <p class="display">Подписка на&nbsp;дайджест форума-выставки</p>
+                    <p>Подпишитесь на&nbsp;получение дайджеста ОТДЫХ Leisure и&nbsp;будьте в&nbsp;курсе всех событий главного события осенне-зимнего сезона, новостей участников и&nbsp;анонсов деловой программы!</p>
+                    <form action="#" method="post" style="max-width:580px">
+                        <div class="form-input"><span class="form-input-label">Контактное лицо</span><input type="text" name="name" value="" class="required"></div>
+                        <div class="form-input"><span class="form-input-label">E-mail</span><input type="text" name="email" value="" class="required email"></div>
+                        <div class="form-input form-input-date"><span class="form-input-label">Дата</span><input type="text" name="date" value="" class="required"></div>
+                        <div class="form-input"><span class="form-input-label">Телефон</span><input type="text" name="phone" value="" class="required phoneRU"></div>
+                        <div class="form-select">
+                            <select name="format" data-placeholder="Группа компаний" class="required">
+                                <option value=""></option>
+                                <option value="1">Архитектура программы</option>
+                                <option value="2">Пресс-релиз</option>
+                                <option value="3">Пленарная сессия</option>
+                                <option value="4">Презентационная сессия</option>
+                                <option value="5">Стратегическая сессия</option>
+                                <option value="6">Панельная дискуссия</option>
+                                <option value="7">Открытый диалог</option>
+                                <option value="8">Кейс-сессия</option>
+                                <option value="9">Презентация маршрута</option>
+                                <option value="10">Дискуссионная панель</option>
+                                <option value="11">Форсайт-сессия</option>
+                                <option value="12">Второй ежегодный проект</option>
+                                <option value="13">Практическая дискуссия</option>
+                                <option value="14">Круглый стол</option>
+                                <option value="15">Код будущего</option>
+                                <option value="16">ТехТрек</option>
+                                <option value="17">Философия путешествий</option>
+                                <option value="18">Big Data и&nbsp;рынок туризма. Обзор технологий, инструкции и&nbsp;подводные камни.</option>
+                                <option value="19">Чат с Министром</option>
+                                <option value="20">Тренды сезона осень-зима 2023/2024</option>
+                                <option value="21">Креативность. Хаб идей</option>
+                            </select>
+                        </div>
+                        <div class="form-select">
+                            <select name="format2" data-placeholder="Группа компаний" class="required" multiple>
+                                <option value=""></option>
+                                <option value="1">Архитектура программы</option>
+                                <option value="2">Пресс-релиз</option>
+                                <option value="3">Пленарная сессия</option>
+                                <option value="4">Презентационная сессия</option>
+                                <option value="5">Стратегическая сессия</option>
+                                <option value="6">Панельная дискуссия</option>
+                                <option value="7">Открытый диалог</option>
+                                <option value="8">Кейс-сессия</option>
+                                <option value="9">Презентация маршрута</option>
+                                <option value="10">Дискуссионная панель</option>
+                                <option value="11">Форсайт-сессия</option>
+                                <option value="12">Второй ежегодный проект</option>
+                                <option value="13">Практическая дискуссия</option>
+                                <option value="14">Круглый стол</option>
+                                <option value="15">Код будущего</option>
+                                <option value="16">ТехТрек</option>
+                                <option value="17">Философия путешествий</option>
+                                <option value="18">Big Data и&nbsp;рынок туризма. Обзор технологий, инструкции и&nbsp;подводные камни.</option>
+                                <option value="19">Чат с Министром</option>
+                                <option value="20">Тренды сезона осень-зима 2023/2024</option>
+                                <option value="21">Креативность. Хаб идей</option>
+                            </select>
+                        </div>
+                        <div class="form-input"><span class="form-input-label">Примечание</span><textarea name="comment" rows="1" cols="1"></textarea></div>
+                        <div class="form-checkbox"><label><input type="checkbox" name="checkox1" checked><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-checkbox"><label><input type="checkbox" name="checkox2"><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-checkbox"><label><input type="checkbox" name="checkox3" disabled><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-radio"><label><input type="radio" name="radio" value="1" checked><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-radio"><label><input type="radio" name="radio" value="2"><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-radio"><label><input type="radio" name="radio" value="3" disabled><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-checkbox-alt"><label><input type="checkbox" name="checkoxalt1" checked><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-checkbox-alt"><label><input type="checkbox" name="checkoxalt2"><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-checkbox-alt"><label><input type="checkbox" name="checkoxalt3" disabled><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="form-submit"><button type="submit" class="btn">оставить заявку</button></div>
+                        <div class="form-checkbox"><label><input type="checkbox" name="confirm" class="required"><span>Сетевая часть инфраструктуры базируется на&nbsp;VXLAN/EVPN фабрике, позволяющей гибко разрабатывать и&nbsp;масштабировать сетевые сервисы.</span></label></div>
+                        <div class="captcha-container"></div>
+                        <div class="captcha-notice">Этот сайт использует <a href="https://yandex.ru/legal/smartcaptcha_notice/" target="_blank">Yandex SmartCaptcha</a>.</div>
+                    </form>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+            <!-- wrapper inner END -->
+
+            <footer>
+                <div class="container">
+                    <div class="footer-container">
+                        <div class="footer-about">
+                            <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo-footer"></use></svg></div>
+                            <div class="footer-title">дата-центры<br> и&nbsp;облачные сервисы</div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Дата-центры</a>
+                                        <ul>
+                                            <li><a href="#">Калининский</a></li>
+                                            <li><a href="#">Xelent</a></li>
+                                            <li><a href="#">StoreData</a></li>
+                                            <li><a href="#">Москва-2</a></li>
+                                            <li><a href="#">Иннополис</a></li>
+                                            <li><a href="#">Арктика</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Услуги и сервисы</a>
+                                        <ul>
+                                            <li><a href="#">Облачные продукты</a></li>
+                                            <li><a href="#">Услуги ЦОД</a></li>
+                                            <li><a href="#">Сетевые услуги</a></li>
+                                            <li><a href="#">Аренда оборудования / Dedicated</a></li>
+                                            <li><a href="#">Информационная безопасность</a></li>
+                                            <li><a href="#">Услуги ЦОД</a></li>
+                                            <li><a href="#">Сетевые услуги</a></li>
+                                            <li><a href="#">Аренда оборудования / Dedicated</a></li>
+                                            <li><a href="#">Информационная безопасность</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Решения</a>
+                                        <ul>
+                                            <li><a href="#">ИТ без капитальных затрат</a></li>
+                                            <li><a href="#">Защита данных по требованиям регуляторов</a></li>
+                                            <li><a href="#">Лучшие практики перехода в облако</a></li>
+                                            <li><a href="#">Консолидация ИТ ландшафта в дата-центре</a></li>
+                                            <li><a href="#">Масштабирование по запросу</a></li>
+                                            <li><a href="#">Профессиональная поддержка и аутсорсинг</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Документы</a>
+                                        <ul>
+                                            <li><a href="#">Реквизиты компании</a></li>
+                                            <li><a href="#">Раскрытие информации</a></li>
+                                            <li><a href="#">Политики</a></li>
+                                            <li><a href="#">Информационные сообщения</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Компания</a>
+                                        <ul>
+                                            <li><a href="#">Компания</a></li>
+                                            <li><a href="#">Партнеры</a></li>
+                                            <li><a href="#">Пресс-центр</a></li>
+                                            <li><a href="#">Лицензии и сертификаты</a></li>
+                                            <li><a href="#">Карьера</a></li>
+                                            <li><a href="#">Закупки</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Группа компаний АТОМДАТА</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-copyrights">&copy;&nbsp;1995&ndash;2023<br> АТОМДАТА</div>
+                        <div class="footer-policy"><a href="#">Политика ООО в&nbsp;отношении обработки<br> персональных данных</a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
