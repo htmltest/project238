@@ -36,8 +36,10 @@
 .form-select select.error+label.error+.select2-container--default {padding-bottom:28px}
 
 .select2-container--full .select2-selection--single {padding-top:18.5px}
+.form-select.no-placeholder .select2-container--full .select2-selection--single {padding-top:11.5px}
 
 .select2-container--full::after {content:attr(data-placeholder); font-weight:normal; position:absolute; left:10px; top:5.5px; color:#616A71; font-size:12px; line-height:18px; letter-spacing:-0.01em; pointer-events:none}
+.form-select.no-placeholder .select2-container--full::after {display:none}
 select[multiple]+.select2-container--full::after {display:none}
 .select2-container--default .select2-selection--single .select2-selection__rendered {color:#2E3941}
 .select2-container--default .select2-selection--single .select2-selection__clear {cursor:pointer; float:right; font-weight:bold}
