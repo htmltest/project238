@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>АТОМДАТА</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Flex:opsz,wdth,wght@8..144,120,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+        <link href="images/webclip.png" rel="apple-touch-icon">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- wrapper inner -->
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+                        <div class="header-left">
+                            <div class="header-logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
+                            <div class="header-title">дата-центры<br> и&nbsp;облачные сервисы</div>
+                        </div>
+                        <div class="header-right">
+                            <div class="header-menu">
+                                <div class="header-menu-item with-submenu active">
+                                    <a href="#" class="header-menu-item-parent">Дата-центры<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-centers">
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-01.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Калининский</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Тверская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-02.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Xelent</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Санкт-Петербург</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center active">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-03.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Иннополис</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, г.&nbsp;Иннополис</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-04.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД StoreData</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Москва</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-05.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Москва-2</div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Москва</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center soon">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-06.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Арктика <span>| проект</span></div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Мурманская область</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-submenu-popup-center soon">
+                                                        <a href="#">
+                                                            <div class="header-submenu-popup-center-icon"><img src="files/centers-icon-07.svg" alt=""></div>
+                                                            <div class="header-submenu-popup-center-content">
+                                                                <div class="header-submenu-popup-center-title">ЦОД Xelent-2 <span>| проект</span></div>
+                                                                <div class="header-submenu-popup-center-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, Санкт-Петербург</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Услуги и сервисы<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-menu">
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Услуги ЦОД</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Облачные продукты</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-cloud-1"></use></svg></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-cloud-2"></use></svg></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Преимущества достаточны для&nbsp;выполнения требований</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-cloud-3"></use></svg></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Облако ФЗ-152</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-cloud-4"></use></svg></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Облако для КИИ</div>
+                                                                            <div class="header-submenu-popup-service-text">Преимущества достаточны для&nbsp;выполнения требований</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-cloud-5"></use></svg></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Гибридное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Аренда оборудования / Dedicated</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-menu-dedicated-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Серверное оборудование</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-menu-dedicated-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Системы хранения данных</div>
+                                                                            <div class="header-submenu-popup-service-text">Преимущества достаточны для&nbsp;выполнения требований</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-menu-dedicated-03.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Сетевое оборудование</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-menu-dedicated-04.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Комплексные решения</div>
+                                                                            <div class="header-submenu-popup-service-text">Преимущества достаточны для&nbsp;выполнения требований</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Сетевые услуги</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-parent"><span>Информационная безопасность</span><svg><use xlink:href="images/sprite.svg#header-submenu-arrow"></use></svg></a>
+                                                            <div class="header-submenu-popup-menu-item-sub">
+                                                                <div class="header-submenu-popup-services">
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-01.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Публичное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Однако, не всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="header-submenu-popup-service">
+                                                                        <div class="header-submenu-popup-service-icon"><img src="files/services-02.svg" alt=""></div>
+                                                                        <div class="header-submenu-popup-service-content">
+                                                                            <div class="header-submenu-popup-service-title">Частное облако</div>
+                                                                            <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-link"><span>VAS (Value-Added Service)</span></a>
+                                                        </div>
+                                                        <div class="header-submenu-popup-menu-item">
+                                                            <a href="#" class="header-submenu-popup-menu-item-link ext-link" target="_blank"><span>Интеграционные проекты</span><svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-submenu-popup-submenu">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Решения<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-submenu">
+                                                        <div class="header-submenu-popup-services">
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-1"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">ИТ без капитальных затрат</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-2"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Защита данных по требованиям регуляторов</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-3"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Лучшие практики перехода в&nbsp;облако</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-4"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Консолидация ИТ ландшафта в&nbsp;дата-центре</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-5"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Масштабирование по&nbsp;запросу</div>
+                                                                    <div class="header-submenu-popup-service-text">Не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-service">
+                                                                <div class="header-submenu-popup-service-icon"><svg><use xlink:href="images/sprite.svg#services-solutions-6"></use></svg></div>
+                                                                <div class="header-submenu-popup-service-content">
+                                                                    <div class="header-submenu-popup-service-title">Профессиональная поддержка и&nbsp;аутсорсинг</div>
+                                                                    <div class="header-submenu-popup-service-text">Однако, не&nbsp;всегда перечисленные преимущества достаточны</div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu">
+                                    <a href="#" class="header-menu-item-parent">Компания<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-popup">
+                                        <div class="header-submenu-popup-container">
+                                            <div class="container">
+                                                <div class="header-submenu-popup-content">
+                                                    <div class="header-submenu-popup-about-menu">
+                                                        <ul>
+                                                            <li><a href="#">Компания</a></li>
+                                                            <li><a href="#">Партнеры</a></li>
+                                                            <li>
+                                                                <a href="#">Пресс-центр</a>
+                                                                <ul>
+                                                                    <li><a href="#">Новости</a></li>
+                                                                    <li><a href="#">СМИ о нас</a></li>
+                                                                    <li><a href="#">Видео</a></li>
+                                                                    <li><a href="#">Фотогалерея</a></li>
+                                                                    <li><a href="#">Фирменный стиль</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="header-submenu-popup-about-menu">
+                                                        <ul>
+                                                            <li><a href="#">Лицензии и сертификаты</a></li>
+                                                            <li><a href="#">Презентации</a></li>
+                                                            <li><a href="#">Карьера</a></li>
+                                                            <li>
+                                                                <a href="#">Закупки</a>
+                                                                <ul>
+                                                                    <li><a href="#">Активные закупки</a></li>
+                                                                    <li><a href="#">Реестр поставщиков</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Контакты</a></li>
+                                                            <li class="with-sep"><a href="#">Группа компаний АТОМДАТА</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="header-submenu-popup-about-news">
+                                                        <div class="header-submenu-popup-about-news-inner">
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-1.jpg" alt=""></div>
+                                                                <div class="title-small">Рыночный SLA с одними из самых дешёвых цен на рынке</div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-2.jpg" alt=""></div>
+                                                                <div class="title-small">Рыночный SLA с одними из самых дешёвых цен на рынке</div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                            <a href="#" class="header-submenu-popup-about-news-item">
+                                                                <div class="header-submenu-popup-about-news-item-preview"><img src="files/menu-about-news-3.jpg" alt=""></div>
+                                                                <div class="title-small">Однако, не всегда перечисленные преимущества достаточны для выполнения </div>
+                                                                <div class="body-small">12 Апреля</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-item with-submenu with-list">
+                                    <a href="#" class="header-menu-item-parent">Документы<svg><use xlink:href="images/sprite.svg#header-menu-arrow"></use></svg></a>
+                                    <div class="header-submenu-list">
+                                        <div class="header-submenu-list-content">
+                                            <div class="header-submenu-list-item"><a href="#">Реквизиты компании</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Раскрытие информации</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Политики</a></div>
+                                            <div class="header-submenu-list-item"><a href="#">Информационные сообщения</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-user">
+                                <a href="#" class="header-user-link"><svg><use xlink:href="images/sprite.svg#header-icon-user"></use></svg></a>
+                            </div>
+                            <div class="header-search">
+                                <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#header-icon-search"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-search-window">
+                        <div class="container">
+                            <div class="header-search-window-form">
+                                <form action="#" method="post">
+                                    <div class="header-search-input"><input type="text" name="search" value="" placeholder="Поиск" class="required"></div>
+                                    <div class="header-search-form-submit"><button type="submit"><svg><use xlink:href="images/sprite.svg#header-icon-search"></use></svg></button></div>
+                                </form>
+                            </div>
+                            <a href="#" class="header-search-close"><svg><use xlink:href="images/sprite.svg#window-close"></use></svg></a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="services-category-header centers-detail-header">
+                    <div class="centers-detail-header-bg centers-detail-header-bg-innopolis" style="background-image:url(files/innopolis/centers-detail-header.jpg)"></div>
+                    <div class="container">
+                        <div class="services-category-header-content">
+                            <div class="breadcrumbs"><a href="#">Главная</a><svg><use xlink:href="images/sprite.svg#breadcrumbs"></use></svg><a href="#">Дата-центры</a><svg><use xlink:href="images/sprite.svg#breadcrumbs"></use></svg>Иннополис</div>
+                            <h1 class="display page-title"><img src="files/centers-icon-03.svg" alt="">Иннополис</h1>
+                            <div class="title-small services-category-header-location"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Россия, республика Татарстан, г.&nbsp;Иннополис</div>
+                            <div class="services-category-header-anonce">Крупнейший дата-центр России к&nbsp;востоку от&nbsp;Москвы</div>
+                            <div class="services-category-header-link"><a href="#" class="btn">оставить заявку</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- services card -->
+                    <div class="services-card">
+
+                        <!-- services card content -->
+                        <div class="services-card-content">
+
+                            <div class="services-card-page-menu">
+                                <div class="services-card-page-menu-shadow"></div>
+                                <div class="services-card-page-menu-inner">
+                                </div>
+                            </div>
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Общая информация</div>
+                                    <div class="centers-detail-section-header-anonce">
+                                        <p>Дата-центр Иннополис&nbsp;&mdash; провайдер комплексных услуг для организации надежной и&nbsp;масштабируемой ИТ-инфраструктуры коммерческих компаний и&nbsp;государственных заказчиков. Клиенты дата-центра могут воспользоваться ресурсами ЦОД &laquo;под ключ&raquo;: разместить собственные сервера, арендовать готовое серверное оборудование дата-центра, арендовать облачные сервисы и&nbsp;каналы связи, при этом имея возможность гибкого управления объемом услуги под текущие поддержку и&nbsp;мониторинг 24/7/365.</p>
+                                    </div>
+                                </div>
+
+                                <div class="centers-detail-info">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">99,982%</div>
+                                                <div class="centers-detail-info-digit-text">Уровень доступности ЦОД</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">1000</div>
+                                                <div class="centers-detail-info-digit-text">Стойко-мест<br> (1-я очередь)</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">16 МВА</div>
+                                                <div class="centers-detail-info-digit-text">Мощность присоединения</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">TIER-III</div>
+                                                <div class="centers-detail-info-digit-text">Сертифицирован PCI DSS</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">5</div>
+                                                <div class="centers-detail-info-digit-text">Периметров безопасности</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-value" style="color:#31AA44">12 часов</div>
+                                                <div class="centers-detail-info-digit-text">Время автономной работы ЦОД от&nbsp;ДГУ без подвоза топлива</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-08.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-02.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-03.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-04.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-05.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-06.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-07.webp)"></div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/photogallery-01.webp)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                        <div class="centers-detail-info-gallery-link"><a href="#" class="btn">Записаться на экскурсию</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Электроснабжение</div>
+                                    <div class="centers-detail-section-header-anonce">
+                                        <p>Электроснабжение ЦОД &laquo;Иннополис&raquo; организовано по&nbsp;схеме&nbsp;2N (двойное резервирование электропитания). Основное внешнее электроснабжение осуществляется от&nbsp;2&nbsp;независимых источников питания и&nbsp;4&nbsp;взаиморезервирующих кабельных линий от&nbsp;ГПП &laquo;Иннополис&raquo;. При этом дата-центр обеспечен не&nbsp;только основной, но&nbsp;и&nbsp;резервной системой электропитания.</p>
+                                        <p>В&nbsp;случае отсутствия внешнего электроснабжения все системы продолжат свою работу за&nbsp;счет включения источников бесперебойного питания (ИБП), а&nbsp;затем и&nbsp;дизельно-генераторных установок, которые будут работать не&nbsp;менее 12&nbsp;часов без подвоза топлива. Таким образом, в&nbsp;дата-центре организована система бесперебойного и&nbsp;гарантированного электроснабжения.</p>
+                                    </div>
+                                </div>
+
+                                <div class="centers-detail-info reverse">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-electrical"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Внешнее электроснабжения от&nbsp;2&nbsp;независимых источников питания и&nbsp;4&nbsp;взаиморезервирующие кабельные линии от&nbsp;ГПП &laquo;Иннополис&raquo;</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-electrical"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Независимое электропитание каждого машинного зала</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-electrical"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">
+                                                    Система бесперебойного и&nbsp;гарантированного электроснабжения оборудования со&nbsp;степенью резервирования&nbsp;2N:
+                                                    <ul>
+                                                        <li>8&nbsp;ИБП по&nbsp;1,5&nbsp;МВт каждый по&nbsp;схеме резервирования 2N</li>
+                                                        <li>10&nbsp;минут работы ЦОД от&nbsp;ИБП до&nbsp;запуска дизельно-генераторных установок</li>
+                                                        <li>сервисное обслуживание и&nbsp;замена элементов без отключения ИБП и&nbsp;батарейного кабинета</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-electrical"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">
+                                                    Резервное энергоснабжение от&nbsp;ДГУ:
+                                                    <ul>
+                                                        <li>8&nbsp;ДГУ по&nbsp;схеме резервирования 2N</li>
+                                                        <li>собственное топливохранилище 120 м&sup2;</li>
+                                                        <li>время выхода на&nbsp;полную мощность&nbsp;&mdash; 15&nbsp;секунд</li>
+                                                        <li>время работы ЦОД от&nbsp;ДГУ&nbsp;&mdash; 12&nbsp;часов без дозаправки топлива</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/electrical-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Cистемы охлаждения</div>
+                                    <div class="centers-detail-section-header-anonce">Охлаждение ЦОД Иннополис обеспечивается согласно схеме &laquo;чиллер-фанкойл&raquo; с&nbsp;аккумуляторами холода, независимо для каждого машинного зала. Высокая энергоэффективность обеспечена за&nbsp;счет использования технологии свободного охлаждения &laquo;фрикулинг&raquo; в&nbsp;холодное время года. Для безопасности серверного оборудования системы охлаждения вынесены за&nbsp;пределы машинного зала.</div>
+                                </div>
+
+                                <div class="centers-detail-info">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cooling"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Схема резервирования каждого машинного зала N+1</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cooling"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Технология Continuous Cooling</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cooling"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Гарантированная температура 22&deg;C&plusmn;3&deg;C</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cooling"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Гарантированная влажность 20-60%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/cooling-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Сеть</div>
+                                    <div class="centers-detail-section-header-anonce">ЦОД &laquo;Иннополис&raquo; является оператором связи и&nbsp;предоставляет своим клиентам услуги интернет, а&nbsp;также выделенные и&nbsp;защищенные каналы связи на&nbsp;базе собственных ВОЛС. Кроме того, мы&nbsp;сотрудничаем с&nbsp;широким кругом федеральных и&nbsp;региональных операторов связи, что позволяет нашим клиентам выбирать самые подходящие условия организации услуг связи.</div>
+                                </div>
+
+                                <div class="centers-detail-info reverse">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cable"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Две географически разнесенные кабельные трассы ВОЛС для организации резервируемых каналов связи</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cable"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Подключение стоек клиента к&nbsp;телекоммуникационной сети двумя независимыми не&nbsp;пересекающимися трассами от&nbsp;двух независимых телекоммуникационных зон (Meetme Room)</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cable"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Организация каналов передачи данных от&nbsp;серверного оборудования клиента, размещенного в&nbsp;дата-центре, до&nbsp;офиса клиента</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-cable"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Коммутаторы для подключения серверов с&nbsp;возможностью установки трансиверов, работающих на&nbsp;скоростях <nobr>1/10/25/100&nbsp;Гбит/с</nobr></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/net-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Пожарная безопасность</div>
+                                    <div class="centers-detail-section-header-anonce">Пожарная безопасность дата-центра обеспечена аспирационной системой раннего обнаружения возгорания и&nbsp;автоматической системой пожаротушения, в&nbsp;которой применяется безопасный для людей и&nbsp;IT-оборудования газ.</div>
+                                </div>
+
+                                <div class="centers-detail-info">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-fire"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Аспирационная система раннего обнаружения возгорания</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-fire"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Автоматическая система пожаротушения включает в&nbsp;себя 3&nbsp;централизованных установки и&nbsp;14&nbsp;модульных установок газового пожаротушения.</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-fire"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Установки кондиционирования обеспечивают работоспособность технологического процесса в&nbsp;помещении машинного зала, работают непрерывно и&nbsp;не&nbsp;отключаются при пожаротушении.</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-fire"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">
+                                                    В&nbsp;качестве газового огнетушащего вещества принят ФК-5-1-12:
+                                                    <ul>
+                                                        <li>Безопасен для людей и&nbsp;IT-оборудования</li>
+                                                        <li>Нулевой потенциал озоноразрушения</li>
+                                                        <li>Время жизни в&nbsp;атмосфере&nbsp;&mdash; 5&nbsp;дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/fire-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Безопасность</div>
+                                    <div class="centers-detail-section-header-anonce">Дата-центр оснащен пятью рубежами физической безопасности. Без специального пропуска и&nbsp;проверки службы безопасности попасть внутрь объекта невозможно. Для доступа в&nbsp;ЦОД используются биометрические сканеры и&nbsp;индивидуальные пропуска с&nbsp;разграничением прав. Территория круглосуточно находится под видеонаблюдением и&nbsp;оснащена охранной сигнализацией. По&nbsp;требованию заказчика стойки могут быть защищены индивидуальной системой доступа.</div>
+                                </div>
+
+                                <div class="centers-detail-info reverse">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Закрытый периметр.<br> Ограждение территории, круглосуточная охрана, СКУД, охранная сигнализация, система видеонаблюдения и&nbsp;тревожная кнопка.</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">КПП на&nbsp;входе в&nbsp;ЦОД.<br> СКУД с&nbsp;биометрическими сканерами идентификации личности. Система видеорегистрации посетителей. Хранение архива 180&nbsp;дней.</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Индивидуальные пропуска с&nbsp;разграничением прав доступа в&nbsp;технические помещения</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Дополнительная проверка прав доступа в&nbsp;каждый машинный зал</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Индивидуальное ограждение стоек под самые взыскательные требования клиента</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-security"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">24/7<br> Круглосуточная охрана</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/security-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Техническая поддержка</div>
+                                    <div class="centers-detail-section-header-anonce">Дата-центр и&nbsp;показатели работы всех инженерных систем находятся под круглосуточным мониторингом. Каждые 4&nbsp;часа происходит обход машинных залов и&nbsp;осмотр инженерной инфраструктуры. Все данные по&nbsp;состоянию оборудования и&nbsp;энергопотребления доступны клиентам онлайн.</div>
+                                </div>
+
+                                <div class="centers-detail-info">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Круглосуточный мониторинг энергетических, климатических и&nbsp;сетевых параметров</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Возможность трансляции основных показателей в&nbsp;личном кабинете клиента</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Регулярный обход машинных залов и&nbsp;помещений инженерной инфраструктуры</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Техническая поддержка 24&times;7x365</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Первая и&nbsp;вторая линии поддержки клиентов</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-support"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Личный кабинет клиента</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/support-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">&laquo;Зелёные&raquo; технологии</div>
+                                    <div class="centers-detail-section-header-anonce">В&nbsp;ЦОД &laquo;Иннополис&raquo; применены зелёные технологии для снижения энергопотребления и&nbsp;вредного воздействия на&nbsp;окружающую среду.</div>
+                                </div>
+
+                                <div class="centers-detail-info reverse">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-green"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Солнечные панели для освещения офисных помещений</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-green"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Вторичное использование тепла машинных залов для отопления административных помещений</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-green"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Система охлаждения &laquo;фрикулинг&raquo;</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-icon"><svg style="stroke:#31AA44; fill:#31AA44"><use xlink:href="images/sprite.svg#icon-green"></use></svg></div>
+                                                <div class="centers-detail-info-digit-text">Зарядные станции для электромобилей</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="centers-detail-info-gallery">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="centers-detail-info-gallery-item" style="background-image:url(files/innopolis/green-01.jpg)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#gallery-prev"></use></svg></div>
+                                            <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#gallery-next"></use></svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                            <!-- services card section -->
+                            <div class="services-card-section">
+                                <div class="centers-detail-section-header">
+                                    <div class="services-card-section-title">Планировочные решения</div>
+                                </div>
+
+                                <div class="centers-detail-info wide-digits">
+                                    <div class="centers-detail-info-digits">
+                                        <div class="centers-detail-info-digits-list">
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Просторные офисные помещения и&nbsp;зоны отдыха для персонала</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Индивидуальное офисное место для каждого сотрудника</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Оборудованные складские пространства для хранения ЗИП</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Паркинг для сотрудников и&nbsp;клиентов</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Комфортная зона выгрузки-погрузки оборудования</div>
+                                            </div>
+                                            <div class="centers-detail-info-digit" style="border-top-color:#31AA44">
+                                                <div class="centers-detail-info-digit-text">Доклевеллер для исключения попадания осадков на&nbsp;оборудование при такелаже</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- services card section END -->
+
+                        </div>
+                        <!-- services card content END -->
+
+                    </div>
+                    <!-- services card END -->
+
+                </div>
+                <!-- container END -->
+
+                <!-- center contacts -->
+                <div class="center-contacts">
+                    <div class="center-contacts-map" id="map"></div>
+                    <script src="https://api-maps.yandex.ru/2.1/?apikey=e57c585d-ec7d-41bf-af46-c8d197dc63c8&lang=ru_RU" type="text/javascript"></script>
+                    <script>
+                        ymaps.ready(init);
+
+                        var myMap;
+                        var coords = [55.751837, 48.751597];
+
+                        function init() {
+                            myMap = new ymaps.Map('map', {
+                                center: coords,
+                                zoom: 15,
+                                controls: []
+                            });
+
+                            myMap.controls.add('zoomControl');
+                            myMap.behaviors.disable('scrollZoom');
+
+                            myMap.geoObjects.add(new ymaps.Placemark(coords));
+                        }
+                    </script>
+                    <div class="center-contacts-inner">
+                        <div class="container">
+                            <div class="center-contacts-info">
+                                <h2>Контакты</h2>
+                                <div class="center-contacts-info-block">
+                                    <h4>Адрес</h4>
+                                    <p>420500, РТ, г.&nbsp;Иннополис, ул.&nbsp;Университетская,&nbsp;7, офис&nbsp;714</p>
+                                </div>
+                                <div class="center-contacts-info-block">
+                                    <h4>Отдел продаж</h4>
+                                    <p>Отправьте нам запрос, чтобы получить коммерческое предложение или консультацию по&nbsp;решениям и&nbsp;услугам</p>
+                                    <p><a href="mailto:atomdata-innopolis@rosenergoatom.ru">atomdata-innopolis@rosenergoatom.ru</a></p>
+                                </div>
+                                <div class="center-contacts-info-block">
+                                    <h4>Центр технической поддержки</h4>
+                                    <p><a href="tel:+79673752060" class="phone-link">+7 (967) 375-20-60</a></p>
+                                    <p><a href="mailto:atomdata-innopolis@rosenergoatom.ru">atomdata-innopolis@rosenergoatom.ru</a> – техническая поддержка клиентов</p>
+                                </div>
+                                <div class="center-contacts-info-btns">
+                                    <div class="center-contacts-info-btn"><a href="#" class="btn">Оставить заявку</a></div>
+                                    <div class="center-contacts-info-btn"><a href="#" class="btn btn-border">Записаться на экскурсию</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- center contacts END -->
+
+            </div>
+            <!-- wrapper inner END -->
+
+            <footer>
+                <div class="container">
+                    <div class="footer-container">
+                        <div class="footer-about">
+                            <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo-footer"></use></svg></div>
+                            <div class="footer-title">дата-центры<br> и&nbsp;облачные сервисы</div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Дата-центры</a>
+                                        <ul>
+                                            <li><a href="#">Калининский</a></li>
+                                            <li><a href="#">Xelent</a></li>
+                                            <li><a href="#">StoreData</a></li>
+                                            <li><a href="#">Москва-2</a></li>
+                                            <li><a href="#">Иннополис</a></li>
+                                            <li><a href="#">Арктика</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Услуги и сервисы</a>
+                                        <ul>
+                                            <li><a href="#">Облачные продукты</a></li>
+                                            <li><a href="#">Услуги ЦОД</a></li>
+                                            <li><a href="#">Сетевые услуги</a></li>
+                                            <li><a href="#">Аренда оборудования / Dedicated</a></li>
+                                            <li><a href="#">Информационная безопасность</a></li>
+                                            <li><a href="#">Услуги ЦОД</a></li>
+                                            <li><a href="#">Сетевые услуги</a></li>
+                                            <li><a href="#">Аренда оборудования / Dedicated</a></li>
+                                            <li><a href="#" class="ext-link" target="_blank">Интеграционные проекты<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Решения</a>
+                                        <ul>
+                                            <li><a href="#">ИТ без капитальных затрат</a></li>
+                                            <li><a href="#">Защита данных по требованиям регуляторов</a></li>
+                                            <li><a href="#">Лучшие практики перехода в облако</a></li>
+                                            <li><a href="#">Консолидация ИТ ландшафта в дата-центре</a></li>
+                                            <li><a href="#">Масштабирование по запросу</a></li>
+                                            <li><a href="#">Профессиональная поддержка и аутсорсинг</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Документы</a>
+                                        <ul>
+                                            <li><a href="#">Реквизиты компании</a></li>
+                                            <li><a href="#">Раскрытие информации</a></li>
+                                            <li><a href="#">Политики</a></li>
+                                            <li><a href="#">Информационные сообщения</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu-col">
+                                <ul>
+                                    <li>
+                                        <a href="#">Компания</a>
+                                        <ul>
+                                            <li><a href="#">Компания</a></li>
+                                            <li><a href="#">Партнеры</a></li>
+                                            <li><a href="#">Пресс-центр</a></li>
+                                            <li><a href="#">Лицензии и сертификаты</a></li>
+                                            <li><a href="#">Карьера</a></li>
+                                            <li><a href="#">Закупки</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Группа компаний АТОМДАТА</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-copyrights">&copy;&nbsp;1995&ndash;2023<br> АТОМДАТА</div>
+                        <div class="footer-policy"><a href="#">Политика ООО в&nbsp;отношении обработки<br> персональных данных</a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
