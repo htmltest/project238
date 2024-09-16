@@ -216,35 +216,42 @@ $(document).ready(function() {
                 },
                 1196: {
                     slidesPerView: 6
+                },
+                1580: {
+                    slidesPerView: 7
                 }
             },
         });
     });
 
     $('.services-card-page-menu').each(function() {
-        var menuHTML =  '<div class="swiper">' +
-                            '<div class="swiper-wrapper">';
-        $('.services-card-section').each(function() {
-            menuHTML +=         '<div class="swiper-slide"><div class="services-card-page-menu-item"><a href="#">' + $(this).find('.services-card-section-title').html() + '</a></div></div>';
-        });
-        $('.center-contacts').each(function() {
-            menuHTML +=         '<div class="swiper-slide"><div class="services-card-page-menu-item services-card-page-menu-item-contacts"><a href="#">' + $(this).find('.center-contacts-info h2').html() + '</a></div></div>';
-        });
-        menuHTML +=         '</div>' +
-                            '<div class="swiper-button-prev"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#clients-prev"></use></svg></div>' +
-                            '<div class="swiper-button-next"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#clients-next"></use></svg></div>' +
-                        '</div>';
-        $('.services-card-page-menu-inner').html(menuHTML);
-        $('.services-card-page-menu-item').eq(0).addClass('active');
-        new Swiper($('.services-card-page-menu .swiper')[0], {
-            loop: false,
-            slidesPerView: 'auto',
-            freeMode: true,
-            navigation: {
-                nextEl: $('.services-card-page-menu-inner .swiper-button-next')[0],
-                prevEl: $('.services-card-page-menu-inner .swiper-button-prev')[0],
-            },
-        });
+        if ($('.services-card-section').length > 1) {
+            var menuHTML =  '<div class="swiper">' +
+                                '<div class="swiper-wrapper">';
+            $('.services-card-section').each(function() {
+                menuHTML +=         '<div class="swiper-slide"><div class="services-card-page-menu-item"><a href="#">' + $(this).find('.services-card-section-title').html() + '</a></div></div>';
+            });
+            $('.center-contacts').each(function() {
+                menuHTML +=         '<div class="swiper-slide"><div class="services-card-page-menu-item services-card-page-menu-item-contacts"><a href="#">' + $(this).find('.center-contacts-info h2').html() + '</a></div></div>';
+            });
+            menuHTML +=         '</div>' +
+                                '<div class="swiper-button-prev"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#clients-prev"></use></svg></div>' +
+                                '<div class="swiper-button-next"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#clients-next"></use></svg></div>' +
+                            '</div>';
+            $('.services-card-page-menu-inner').html(menuHTML);
+            $('.services-card-page-menu-item').eq(0).addClass('active');
+            new Swiper($('.services-card-page-menu .swiper')[0], {
+                loop: false,
+                slidesPerView: 'auto',
+                freeMode: true,
+                navigation: {
+                    nextEl: $('.services-card-page-menu-inner .swiper-button-next')[0],
+                    prevEl: $('.services-card-page-menu-inner .swiper-button-prev')[0],
+                },
+            });
+        } else {
+            $('.services-card-page-menu').remove();
+        }
     });
 
     $('body').on('click', '.services-card-page-menu-item a', function(e) {
