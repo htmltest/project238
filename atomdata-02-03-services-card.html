@@ -383,6 +383,7 @@
                             <div class="header-search">
                                 <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#header-icon-search"></use></svg></a>
                             </div>
+                            <a href="#" class="header-menu-link"><svg><use xlink:href="images/sprite.svg#header-menu-link"></use></svg></a>
                         </div>
                     </div>
                     <div class="header-search-window">
@@ -526,131 +527,133 @@
                                 <div class="services-card-section-prolog">Расчёт стоимости владения:</div>
                                 <div class="services-card-calc">
                                     <form action="#" method="post">
-                                        <div class="services-card-calc-headers">
-                                            <div class="services-card-calc-header">Элемент услуги</div>
-                                            <div class="services-card-calc-header">Кол-во</div>
-                                            <div class="services-card-calc-header">Стоимость</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item" data-min="1" data-max="99" data-price="200,00">
-                                            <div class="services-card-calc-item-title">Виртуальный процессор vCPU</div>
-                                            <div class="services-card-calc-item-unit">шт</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="vcpu" value="1">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
+                                        <div class="services-card-calc-wrapper">
+                                            <div class="services-card-calc-headers">
+                                                <div class="services-card-calc-header">Элемент услуги</div>
+                                                <div class="services-card-calc-header">Кол-во</div>
+                                                <div class="services-card-calc-header">Стоимость</div>
                                             </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
 
-                                        <div class="services-card-calc-item" data-min="1" data-max="128" data-price="210,00">
-                                            <div class="services-card-calc-item-title">Виртуальная память vRAM</div>
-                                            <div class="services-card-calc-item-unit">ГБ</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="vram" value="1">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="6,00">
-                                            <div class="services-card-calc-item-title">Виртуальный жесткий диск HDD SATA</div>
-                                            <div class="services-card-calc-item-unit">ГБ</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="hdd" value="0">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="10,00">
-                                            <div class="services-card-calc-item-title">Виртуальный жесткий диск SSD SATA</div>
-                                            <div class="services-card-calc-item-unit">ГБ</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="sata" value="0">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="16,00">
-                                            <div class="services-card-calc-item-title">Виртуальный жесткий диск SSD NVMe</div>
-                                            <div class="services-card-calc-item-unit">ГБ</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="nvme" value="0">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item" data-min="0" data-max="1024" data-price="2,67">
-                                            <div class="services-card-calc-item-title">Ёмкость хранения резервных копий<span class="text-info"><span class="text-info-popup">количество виртуальных машин не тарифицируется, оплачивается только ёмкость</span></span></div>
-                                            <div class="services-card-calc-item-unit">ГБ</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="backup" value="2">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
-                                                </div>
-                                            </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
-
-                                        <div class="services-card-calc-item">
-                                            <div class="services-card-calc-item-title">Доступ в сеть Интернет</div>
-                                            <div class="services-card-calc-item-unit">Мбит/с</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-select">
-                                                    <div class="services-card-calc-item-count-select-current"><span>100</span><svg><use xlink:href="images/sprite.svg#services-card-calc-select"></use></svg></div>
-                                                    <div class="services-card-calc-item-count-select-list">
-                                                        <label><input type="radio" name="connection" value="100" data-price="5 000,00" checked><span>100</span></label>
-                                                        <label><input type="radio" name="connection" value="200" data-price="9 600,00"><span>200</span></label>
-                                                        <label><input type="radio" name="connection" value="300" data-price="14 000,00"><span>300</span></label>
-                                                        <label><input type="radio" name="connection" value="400" data-price="18 000,00"><span>400</span></label>
-                                                        <label><input type="radio" name="connection" value="500" data-price="22 000,00"><span>500</span></label>
-                                                        <label><input type="radio" name="connection" value="600" data-price="25 000,00"><span>600</span></label>
-                                                        <label><input type="radio" name="connection" value="700" data-price="29 000,00"><span>700</span></label>
-                                                        <label><input type="radio" name="connection" value="800" data-price="33 000,00"><span>800</span></label>
-                                                        <label><input type="radio" name="connection" value="900" data-price="37 000,00"><span>900</span></label>
-                                                        <label><input type="radio" name="connection" value="1000" data-price="40 000,00"><span>1000</span></label>
+                                            <div class="services-card-calc-item" data-min="1" data-max="99" data-price="200,00">
+                                                <div class="services-card-calc-item-title">Виртуальный процессор vCPU</div>
+                                                <div class="services-card-calc-item-unit">шт</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="vcpu" value="1">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
                                                     </div>
                                                 </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
                                             </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
-                                        </div>
 
-                                        <div class="services-card-calc-item" data-min="0" data-max="16" data-price="150,00">
-                                            <div class="services-card-calc-item-title">Статический белый IP-адрес</div>
-                                            <div class="services-card-calc-item-unit">шт.</div>
-                                            <div class="services-card-calc-item-count">
-                                                <div class="services-card-calc-item-count-inner">
-                                                    <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
-                                                    <input type="hidden" name="ip" value="2">
-                                                    <div class="services-card-calc-item-count-value"></div>
-                                                    <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                            <div class="services-card-calc-item" data-min="1" data-max="128" data-price="210,00">
+                                                <div class="services-card-calc-item-title">Виртуальная память vRAM</div>
+                                                <div class="services-card-calc-item-unit">ГБ</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="vram" value="1">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
                                                 </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
                                             </div>
-                                            <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+
+                                            <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="6,00">
+                                                <div class="services-card-calc-item-title">Виртуальный жесткий диск HDD SATA</div>
+                                                <div class="services-card-calc-item-unit">ГБ</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="hdd" value="0">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
+
+                                            <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="10,00">
+                                                <div class="services-card-calc-item-title">Виртуальный жесткий диск SSD SATA</div>
+                                                <div class="services-card-calc-item-unit">ГБ</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="sata" value="0">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
+
+                                            <div class="services-card-calc-item" data-min="0" data-max="10000" data-step="100" data-price="16,00">
+                                                <div class="services-card-calc-item-title">Виртуальный жесткий диск SSD NVMe</div>
+                                                <div class="services-card-calc-item-unit">ГБ</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="nvme" value="0">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
+
+                                            <div class="services-card-calc-item" data-min="0" data-max="1024" data-price="2,67">
+                                                <div class="services-card-calc-item-title">Ёмкость хранения резервных копий<span class="text-info"><span class="text-info-popup">количество виртуальных машин не тарифицируется, оплачивается только ёмкость</span></span></div>
+                                                <div class="services-card-calc-item-unit">ГБ</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="backup" value="2">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
+
+                                            <div class="services-card-calc-item">
+                                                <div class="services-card-calc-item-title">Доступ в сеть Интернет</div>
+                                                <div class="services-card-calc-item-unit">Мбит/с</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-select">
+                                                        <div class="services-card-calc-item-count-select-current"><span>100</span><svg><use xlink:href="images/sprite.svg#services-card-calc-select"></use></svg></div>
+                                                        <div class="services-card-calc-item-count-select-list">
+                                                            <label><input type="radio" name="connection" value="100" data-price="5 000,00" checked><span>100</span></label>
+                                                            <label><input type="radio" name="connection" value="200" data-price="9 600,00"><span>200</span></label>
+                                                            <label><input type="radio" name="connection" value="300" data-price="14 000,00"><span>300</span></label>
+                                                            <label><input type="radio" name="connection" value="400" data-price="18 000,00"><span>400</span></label>
+                                                            <label><input type="radio" name="connection" value="500" data-price="22 000,00"><span>500</span></label>
+                                                            <label><input type="radio" name="connection" value="600" data-price="25 000,00"><span>600</span></label>
+                                                            <label><input type="radio" name="connection" value="700" data-price="29 000,00"><span>700</span></label>
+                                                            <label><input type="radio" name="connection" value="800" data-price="33 000,00"><span>800</span></label>
+                                                            <label><input type="radio" name="connection" value="900" data-price="37 000,00"><span>900</span></label>
+                                                            <label><input type="radio" name="connection" value="1000" data-price="40 000,00"><span>1000</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
+
+                                            <div class="services-card-calc-item" data-min="0" data-max="16" data-price="150,00">
+                                                <div class="services-card-calc-item-title">Статический белый IP-адрес</div>
+                                                <div class="services-card-calc-item-unit">шт.</div>
+                                                <div class="services-card-calc-item-count">
+                                                    <div class="services-card-calc-item-count-inner">
+                                                        <a href="#" class="services-card-calc-item-count-dec"><svg><use xlink:href="images/sprite.svg#services-card-calc-dec"></use></svg></a>
+                                                        <input type="hidden" name="ip" value="2">
+                                                        <div class="services-card-calc-item-count-value"></div>
+                                                        <a href="#" class="services-card-calc-item-count-inc"><svg><use xlink:href="images/sprite.svg#services-card-calc-inc"></use></svg></a>
+                                                    </div>
+                                                </div>
+                                                <div class="services-card-calc-item-price"><span>0,00</span> ₽</div>
+                                            </div>
                                         </div>
 
                                         <div class="services-card-calc-summ">

@@ -115,15 +115,20 @@ $(document).ready(function() {
         curParent.find('.header-submenu-popup-menu-item.open').removeClass('open');
         curItem.addClass('open');
         curParent.find('.header-submenu-popup-submenu').html(curItem.find('.header-submenu-popup-menu-item-sub').html());
+
+        curItem.toggleClass('mobile-open');
+        $('html').toggleClass('header-subsubmenu-open');
         e.preventDefault();
     });
 
     $('.header-submenu-popup-menu').each(function() {
-        var curMenu = $(this);
-        if (curMenu.find('.header-submenu-popup-menu-item.active').length == 1) {
-            curMenu.find('.header-submenu-popup-menu-item.active .header-submenu-popup-menu-item-parent').trigger('click');
-        } else {
-            curMenu.find('.header-submenu-popup-menu-item').eq(0).find('.header-submenu-popup-menu-item-parent').trigger('click');
+        if ($(window).width() > 1195) {
+            var curMenu = $(this);
+            if (curMenu.find('.header-submenu-popup-menu-item.active').length == 1) {
+                curMenu.find('.header-submenu-popup-menu-item.active .header-submenu-popup-menu-item-parent').trigger('click');
+            } else {
+                curMenu.find('.header-submenu-popup-menu-item').eq(0).find('.header-submenu-popup-menu-item-parent').trigger('click');
+            }
         }
     });
 
@@ -191,15 +196,23 @@ $(document).ready(function() {
             window.clearTimeout(timerAutoGeo);
             $('.main-geo-map-item-center.open').removeClass('open');
             $(this).addClass('open');
+            $('.main-geo-popup-mobile').addClass('open');
+            $('.main-geo-popup-mobile-container').html($(this).find('.main-geo-map-item-popup').html());
         }
     });
 
     $(document).click(function(e) {
         if ($(window).width() < 1196) {
-            if ($(e.target).parents().filter('.main-geo-map-item-center').length == 0) {
+            if ($(e.target).parents().filter('.main-geo-map-item-center').length == 0 && $(e.target).parents().filter('.main-geo-popup-mobile').length == 0) {
                 $('.main-geo-map-item-center.open').removeClass('open');
+                $('.main-geo-popup-mobile').removeClass('open');
             }
         }
+    });
+
+    $('.main-geo-popup-mobile-close').click(function(e) {
+        $('.main-geo-popup-mobile').removeClass('open');
+        e.preventDefault();
     });
 
     $('.main-clients-list').each(function() {
@@ -209,6 +222,10 @@ $(document).ready(function() {
             navigation: {
                 nextEl: $('.main-clients-list-wrapper .swiper-button-next')[0],
                 prevEl: $('.main-clients-list-wrapper .swiper-button-prev')[0],
+            },
+            pagination: {
+                el: $('.main-clients-list-wrapper .swiper-pagination')[0],
+                clickable: true
             },
             breakpoints: {
                 768: {
@@ -742,6 +759,10 @@ $(document).ready(function() {
                 nextEl: curGallery.find('.swiper-button-next')[0],
                 prevEl: curGallery.find('.swiper-button-prev')[0],
             },
+            pagination: {
+                el: curGallery.find('.swiper-pagination')[0],
+                clickable: true
+            }
         });
     });
 
@@ -760,6 +781,57 @@ $(document).ready(function() {
         if ($(e.target).parents().filter('.header-search').length == 0 && $(e.target).parents().filter('.header-search-window').length == 0 && !$(e.target).hasClass('header-search-window')) {
             $('html').removeClass('header-search-open');
         }
+    });
+
+    $('.footer-menu > ul > li').each(function() {
+        var curItem = $(this);
+        if (curItem.find('ul').length == 1) {
+            curItem.append('<span class="footer-menu-mobile-sublink"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#footer-menu-arrow"></use></svg></span>');
+        }
+    });
+
+    $('body').on('click', '.footer-menu-mobile-sublink', function() {
+        $(this).parent().toggleClass('open');
+    });
+
+    $('.header-menu-link').click(function(e) {
+        if ($('html').hasClass('menu-mobile-open')) {
+            $('html').removeClass('menu-mobile-open');
+            $('meta[name="viewport"]').attr('content', 'width=device-width');
+            $(window).scrollTop($('html').data('scrollTop'));
+        } else {
+            var curWidth = $(window).width();
+            if (curWidth < 375) {
+                curWidth = 375;
+            }
+            var curScroll = $(window).scrollTop();
+            $('html').addClass('menu-mobile-open');
+            $('meta[name="viewport"]').attr('content', 'width=' + curWidth);
+            $('html').data('scrollTop', curScroll);
+        }
+        e.preventDefault();
+    });
+
+    $('.header-submenu-popup-about-menu > ul > li').each(function() {
+        var curItem = $(this);
+        if (curItem.find('ul').length == 1) {
+            curItem.find('> a').append('<span class="header-submenu-popup-about-menu-mobile-sublink"></span>');
+        }
+    });
+
+    $('.header-submenu-popup-about-menu > ul > li > a').click(function(e) {
+        if ($(window).width() < 1196) {
+            var curItem = $(this).parent();
+            if (curItem.find('ul').length == 1) {
+                curItem.toggleClass('open');
+                $('html').toggleClass('menu-about-mobile-open');
+                e.preventDefault();
+            }
+        }
+    });
+    
+    $('.content-table').each(function() {
+        $(this).wrap('<div class="content-table-wrap"></div>');
     });
 
 });
@@ -1384,3 +1456,41 @@ function updateCenterRoute() {
         });
     }
 }
+
+$(window).on('load', function() {
+
+    $('.main-welcome-video').each(function() {
+        var newHTML =   '<div class="main-welcome-video-list">';
+        for (var i = 0; i < mainVideoImgsCount; i++) {
+            newHTML +=      '<div class="main-welcome-video-list-item"><img data-src="' + mainVideoImgsPath + (String('000' + (i + 1)).slice(-4)) + '.png" alt=""></div>';
+        }
+        newHTML +=      '</div>';
+        $('.main-welcome-video').append(newHTML);
+        var curLoad = 0;
+        $('.main-welcome-video-list-item img').one('load', function(e) {
+            curLoad++;
+            if (curLoad >= mainVideoImgsCount) {
+                mainVideoStart();
+            }
+        });
+        $('.main-welcome-video-list-item img').each(function() {
+            $(this).attr('src', $(this).attr('data-src'));
+        });
+
+        var curActive = 0;
+        function mainVideoStart() {
+            $('.main-welcome-video-list-item').eq(0).addClass('active');
+            $('.main-welcome-video').addClass('start');
+
+            window.setInterval(function() {
+                curActive++;
+                if (curActive > mainVideoImgsCount - 1) {
+                    curActive = 0;
+                }
+                $('.main-welcome-video-list-item.active').removeClass('active');
+                $('.main-welcome-video-list-item').eq(curActive).addClass('active');
+            }, 30);
+        }
+    });
+
+});
