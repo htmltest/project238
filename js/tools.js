@@ -431,7 +431,7 @@ $(document).ready(function() {
         var curSlider = $(this);
         var swiper = new Swiper(curSlider.find('.swiper')[0], {
             loop: false,
-            slidesPerView: 3,
+            slidesPerView: 1,
             navigation: {
                 nextEl: curSlider.find('.swiper-button-next')[0],
                 prevEl: curSlider.find('.swiper-button-prev')[0],
@@ -439,6 +439,14 @@ $(document).ready(function() {
             pagination: {
                 el: curSlider.find('.swiper-pagination')[0],
                 clickable: true
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1196: {
+                    slidesPerView: 3
+                },
             },
             on : {
                 slideChangeTransitionStart: function () {
