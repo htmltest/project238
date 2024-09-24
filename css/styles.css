@@ -222,6 +222,7 @@ ol > li::before {content:counter(point)'.'; counter-increment:point 1; position:
 }
 .docs-item-type {min-width:24px; max-width:24px; margin:0 8px 0 0}
 .docs-item-type img {display:block; width:100%}
+.doc-item-title span {display:block; margin:3px 0 0 0; font-size:12px; line-height:18px; color:#999999}
 
 .faq {margin:32px 0 0 0; padding:8px; background:#F0F8FF}
 .faq-item {margin:8px 0 0 0; background:#FFFFFF; position:relative}
@@ -530,11 +531,11 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .header-submenu-popup-about-news-inner {margin:0 0 0 -18px; display:flex}
 .header-submenu-popup-about-news-item {min-width:calc(25% - 18px); max-width:calc(25% - 18px); margin:0 0 0 18px}
 .header-submenu-popup-about-news-item-preview img {display:block; width:100%}
-.header-submenu-popup-about-news-item .title-small {margin:11px 0 0 0; color:#2E3941; transition:color 0.2s}
+.header-submenu-popup-about-news-item .title-small {margin:11px 0 0 0; color:#2E3941; transition:color 0.2s; font-size:13px; line-height:16px}
 @media (min-width:1196px) {
     .header-submenu-popup-about-news-item:hover .title-small {color:#008ECF}
 }
-.header-submenu-popup-about-news-item .body-small {margin:4px 0 0 0; color:#616A71; transition:color 0.2s}
+.header-submenu-popup-about-news-item .body-small {font-size:10px; line-height:16px; margin:4px 0 0 0; color:rgba(117, 128, 135, 0.8); transition:color 0.2s}
 @media (min-width:1196px) {
     .header-submenu-popup-about-news-item:hover .body-small {color:#008ECF}
 }
@@ -867,13 +868,13 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .main-geo-map-item-city {position:absolute; left:0; top:8px; white-space:nowrap; color:#FFFFFF; font:540 10px/12px "Roboto Flex", sans-serif; transform:translateX(-50%); transition:color 0.2s; text-transform:uppercase; letter-spacing:0.04em; text-align:center}
 .main-geo-map-item-line {position:absolute; left:20px; bottom:14px; width:60px; height:1px; border-top:1px dashed rgba(255, 255, 255, 0.8)}
 .main-geo-map-item-line.soon {opacity:0.5}
-.main-geo-map-item-line-2 {position:absolute; left:50px; bottom:-16px; width:30px; height:30px; border-bottom:1px dashed rgba(255, 255, 255, 0.8); border-left:1px dashed rgba(255, 255, 255, 0.8)}
+.main-geo-map-item-line-2 {position:absolute; left:50px; bottom:-26px; width:30px; height:40px; border-bottom:1px dashed rgba(255, 255, 255, 0.8); border-left:1px dashed rgba(255, 255, 255, 0.8)}
 .main-geo-map-item-line-2.soon {opacity:0.5}
 .main-geo-map-item-ctrl.wide .main-geo-map-item-line {width:85px}
 .main-geo-map-item-ctrl.wide .main-geo-map-item-line-2 {left:75px}
 .main-geo-map-item-center {position:absolute; left:90px; bottom:0}
 .main-geo-map-item-center.wide {left:115px}
-.main-geo-map-item-center-2 {bottom:-32px}
+.main-geo-map-item-center-2 {bottom:-42px}
 .main-geo-map-item-center-title {cursor:pointer; font:480 24px/28px "Roboto Flex", sans-serif; color:#FFFFFF; transition:color 0.2s; white-space:nowrap}
 .main-geo-map-item.soon .main-geo-map-item-center-title {opacity:0.5}
 .main-geo-map-item-center.soon .main-geo-map-item-center-title {opacity:0.5}
@@ -936,12 +937,12 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .main-geo-map-item-icon svg {width:13px; height:17px}
     .main-geo-map-item-city {top:4px; font-size:6px; line-height:7px}
     .main-geo-map-item-line {position:absolute; left:10px; bottom:9px; width:33px}
-    .main-geo-map-item-line-2 {left:28px; bottom:-6px; width:17px; height:17px}
+    .main-geo-map-item-line-2 {left:28px; bottom:-16px; width:17px; height:25px}
     .main-geo-map-item-ctrl.wide .main-geo-map-item-line {width:47px}
     .main-geo-map-item-ctrl.wide .main-geo-map-item-line-2 {left:40px}
     .main-geo-map-item-center {left:49px}
     .main-geo-map-item-center.wide {left:63px}
-    .main-geo-map-item-center-2 {bottom:-17px}
+    .main-geo-map-item-center-2 {bottom:-23px}
     .main-geo-map-item-center-title {font-size:12px; line-height:15px}
     .main-geo-map-item-center-title-soon {font-size:8px; line-height:10px}
     .main-geo-map-item-popup-logo img {width:80px}
@@ -2201,6 +2202,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .contacts {margin:40px 0 0 0; display:flex}
 .contacts-office {min-width:500px; max-width:500px; border:1px solid #EAEAEA; border-radius:4px; padding:40px}
 .contacts-title {font:480 24px/28px "Roboto Flex", sans-serif}
+.contacts-list+.contacts-title {margin:40px 0 0 0}
 .contacts-centers {min-width:666px; max-width:666px; border:1px solid #EAEAEA; border-radius:4px; padding:40px; margin:0 0 0 20px}
 .contacts-list {margin:16px 0 0 0}
 .contacts-item {margin:16px 0 0 0; padding:16px 0 0 0; border-top:1px solid #EAEAEA}
@@ -2221,6 +2223,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .contacts {display:block}
     .contacts-office {min-width:0; max-width:none; padding:20px}
     .contacts-title {font-size:20px; line-height:23px}
+    .contacts-list+.contacts-title {margin:20px 0 0 0}
     .contacts-centers {min-width:0; max-width:none; padding:20px; margin:20px 0 0 0}
 }
 

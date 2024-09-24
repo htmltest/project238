@@ -137,7 +137,7 @@ $(document).ready(function() {
         var swiper = new Swiper(curSlider[0], {
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 3500,
                 disableOnInteraction: true
             },
             pagination: {
@@ -257,7 +257,7 @@ $(document).ready(function() {
                             '</div>';
             $('.services-card-page-menu-inner').html(menuHTML);
             $('.services-card-page-menu-item').eq(0).addClass('active');
-            new Swiper($('.services-card-page-menu .swiper')[0], {
+            servicesMenuSwiper = new Swiper($('.services-card-page-menu .swiper')[0], {
                 loop: false,
                 slidesPerView: 'auto',
                 freeMode: true,
@@ -1349,6 +1349,8 @@ $(window).on('load resize', function() {
     });
 });
 
+var servicesMenuSwiper = null;
+
 $(window).on('load resize scroll', function() {
     var windowScroll = $(window).scrollTop();
 
@@ -1419,6 +1421,7 @@ $(window).on('load resize scroll', function() {
             if ((windowScroll + windowHeight / 2) > curBlock.offset().top) {
                 $('.services-card-page-menu-item.active').removeClass('active');
                 curItem.addClass('active');
+                servicesMenuSwiper.slideTo($('.services-card-page-menu-item').index($('.services-card-page-menu-item.active')));
             }
         }
     });
