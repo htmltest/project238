@@ -909,6 +909,11 @@ function initForm(curForm) {
         } else {
             curSelect.parent().addClass('no-placeholder');
         }
+
+        if (curSelect.parents().filter('.window').length == 1) {
+            options['dropdownParent'] = $('.window-container');
+        }
+
         curSelect.select2(options);
         curSelect.parent().find('.select2-container').attr('data-placeholder', curSelect.attr('data-placeholder'));
         curSelect.parent().find('.select2-selection__rendered').attr('data-placeholder', curSelect.attr('data-placeholder'));

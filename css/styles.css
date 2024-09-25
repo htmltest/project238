@@ -222,7 +222,8 @@ ol > li::before {content:counter(point)'.'; counter-increment:point 1; position:
 }
 .docs-item-type {min-width:24px; max-width:24px; margin:0 8px 0 0}
 .docs-item-type img {display:block; width:100%}
-.doc-item-title span {display:block; margin:3px 0 0 0; font-size:12px; line-height:18px; color:#999999}
+.doc-item-title span {display:block; margin:3px 0 0 0; font-size:12px; line-height:18px; color:#888888}
+.doc-item-title span em {font-style:normal; margin:0 7px; color:#E7E7E7}
 
 .faq {margin:32px 0 0 0; padding:8px; background:#F0F8FF}
 .faq-item {margin:8px 0 0 0; background:#FFFFFF; position:relative}
@@ -473,7 +474,8 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .header-submenu-popup-center-icon {min-width:54px; max-width:54px; margin:0 10px 0 0}
 .header-submenu-popup-center-icon img {display:block; width:100%}
 .header-submenu-popup-center-content {width:100%}
-.header-submenu-popup-center-title span {font-weight:normal}
+.header-submenu-popup-center-title span {font:12px/18px Inter, sans-serif; color:#616A71}
+.header-submenu-popup-center-title em {font-style:normal; color:#CCCCCC; margin:0 7px; font:12px/18px Inter, sans-serif}
 .header-submenu-popup-center-address {margin:4px 0 0 0; display:flex; align-items:flex-start; font:12px/18px Inter, sans-serif; color:#616A71}
 .header-submenu-popup-center-address svg {min-width:10px; max-width:10px; height:14px; fill:rgba(46, 57, 65, 0.4); margin:2px 4px 0 0}
 
@@ -1013,7 +1015,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .main-clients-list.swiper {margin:0}
 .main-clients-inner.swiper-wrapper {display:flex}
 .main-clients-item.swiper-slide {min-width:14.28%; max-width:14.28%}
-.main-clients-item-inner {display:flex; margin:0 4px; height:120px; padding:20px; align-items:center; justify-content:center; background:#FFFFFF; border-radius:8px; transition:background 0.2s}
+.main-clients-item-inner {display:flex; margin:0 4px; height:120px; padding:10px; align-items:center; justify-content:center; background:#FFFFFF; border-radius:8px; transition:background 0.2s}
 @media (min-width:1196px) {
     a.main-clients-item-inner:hover {background:#E5F3FF}
 }
@@ -2367,6 +2369,7 @@ footer {margin:80px 0 0 0; background:#3A414B}
 @media (min-width:1196px) {
     .footer-menu a.ext-link:hover svg {fill:#008ECF}
 }
+.footer-menu > ul > li > ul > li > span {margin:0 7px; color:#707070}
 .footer-menu-mobile-sublink {display:none}
 
 @media (max-width:1579px) {
@@ -2535,3 +2538,17 @@ footer {margin:80px 0 0 0; background:#3A414B}
 }
 
 .swiper {-moz-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none}
+
+.services-card-cods {margin:12px -10px 0 -10px; display:flex; flex-wrap:wrap}
+.services-card-cods-item {min-width:calc(33.33% - 20px); max-width:calc(33.33% - 20px); margin:20px 10px 0 10px; padding:50px 0; text-align:center; font:480 17px/20px "Roboto Flex", sans-serif; border:1px solid #EAEAEA; transition:background 0.2s; text-decoration:none; color:#2E3941; border-radius:8px}
+.services-card-cods-item:hover {background:#E5F3FF; color:#2E3941}
+.services-card-cods-item-logo {width:100px; margin:0 auto 30px auto}
+.services-card-cods-item-logo img {display:block; width:100%; filter:drop-shadow(0px 4px 94px rgba(0, 0, 0, 0.25))}
+
+@media (max-width:1195px) {
+    .services-card-cods-item {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+}
+
+@media (max-width:767px) {
+    .services-card-cods-item {min-width:calc(100% - 20px); max-width:calc(100% - 20px)}
+}
