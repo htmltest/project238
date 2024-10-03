@@ -197,6 +197,7 @@ $(document).ready(function() {
             $('.main-geo-map-item-center.open').removeClass('open');
             $(this).addClass('open');
             $('.main-geo-popup-mobile').addClass('open');
+            $('.main-geo-popup-mobile').css({'top': $(this).offset().top - $('.main-geo').offset().top + 50});
             $('.main-geo-popup-mobile-container').html($(this).find('.main-geo-map-item-popup').html());
         }
     });
@@ -308,7 +309,6 @@ $(document).ready(function() {
         }
         curInput.val(curValue);
         curItem.find('.services-card-calc-item-count-value').html(curValue);
-        recalcServiceCard();
         e.preventDefault();
     });
 
@@ -327,7 +327,6 @@ $(document).ready(function() {
         }
         curInput.val(curValue);
         curItem.find('.services-card-calc-item-count-value').html(curValue);
-        recalcServiceCard();
         e.preventDefault();
     });
 
@@ -360,21 +359,12 @@ $(document).ready(function() {
         var curSelect = $(this).parents().filter('.services-card-calc-item-count-select');
         var curInput = curSelect.find('.services-card-calc-item-count-select-list input:checked');
         curSelect.find('.services-card-calc-item-count-select-current span').html(curInput.parent().find('span').html());
-        var curItem = curSelect.parents().filter('.services-card-calc-item');
-        curItem.find('.services-card-calc-item-price span').html(curInput.attr('data-price'));
-        recalcServiceCard();
     });
 
     $('.services-card-calc-item-count-select-list input').each(function() {
         var curSelect = $(this).parents().filter('.services-card-calc-item-count-select');
         var curInput = curSelect.find('.services-card-calc-item-count-select-list input:checked');
         curSelect.find('.services-card-calc-item-count-select-current span').html(curInput.parent().find('span').html());
-        var curItem = curSelect.parents().filter('.services-card-calc-item');
-        curItem.find('.services-card-calc-item-price span').html(curInput.attr('data-price'));
-    });
-
-    $('.services-card-calc').each(function() {
-        recalcServiceCard();
     });
 
     $('.tabs').each(function() {
@@ -798,8 +788,14 @@ $(document).ready(function() {
         }
     });
 
-    $('body').on('click', '.footer-menu-mobile-sublink', function() {
-        $(this).parent().toggleClass('open');
+    $('body').on('click', '.footer-menu > ul > li > a', function(e) {
+        if ($(window).width() < 768) {
+            var curItem = $(this).parent();
+            if (curItem.find('ul').length == 1) {
+                curItem.toggleClass('open');
+                e.preventDefault();
+            }
+        }
     });
 
     $('.header-menu-link').click(function(e) {
@@ -1280,40 +1276,6 @@ function windowClose() {
             }
         }
     }
-}
-
-function recalcServiceCard() {
-    var curSumm = 0;
-    $('.services-card-calc-item').each(function() {
-        var curItem = $(this);
-        if (curItem.find('.services-card-calc-item-count-inner').length == 1) {
-            var curPrice = Number(curItem.attr('data-price').replace(',', '.').replace(' ', ''));
-            if (Number.isNaN(curPrice)) {
-                curPrice = 0;
-            }
-            var curCount = 1;
-            if (curItem.find('.services-card-calc-item-count-value').length == 1) {
-                curCount = Number(curItem.find('.services-card-calc-item-count-value').html());
-            }
-            var itemSumm = (curPrice * curCount).toFixed(2);
-            var itemSummParts = itemSumm.split('.');
-            itemSummParts[0] = itemSummParts[0].replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1&nbsp;');
-            curItem.find('.services-card-calc-item-price span').html(itemSummParts.join(','));
-
-            curSumm += curPrice * curCount;
-        }
-        if (curItem.find('.services-card-calc-item-count-select').length == 1) {
-            var curPrice = Number(curItem.find('.services-card-calc-item-price span').html().replace(',', '.').replace(' ', ''));
-            if (Number.isNaN(curPrice)) {
-                curPrice = 0;
-            }
-            curSumm += curPrice;
-        }
-    });
-    curSumm = curSumm.toFixed(2);
-    var curSummParts = curSumm.split('.');
-    curSummParts[0] = curSummParts[0].replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1&nbsp;');
-    $('.services-card-calc-summ-value span').html(curSummParts.join(','));
 }
 
 $(window).on('load resize', function() {

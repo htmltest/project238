@@ -379,7 +379,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .header-submenu-open .header-menu-item .header-menu-item-parent::before {right:auto; left:20px; transform:scale(-1, 1)}
 }
 
-.header-submenu-popup {display:none; position:absolute; left:0; top:100%; right:0; height:99999px; background:rgba(134, 174, 193, 0.2); backdrop-filter:blur(6px)}
+.header-submenu-popup {display:none; position:absolute; left:0; top:100%; right:0; height:99999px; background:rgba(134, 174, 193, 0.2); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px)}
 .header-menu-item.open .header-submenu-popup {display:block}
 .header-submenu-popup-container {background:#FFFFFF; border-top:1px solid #EAEAEA}
 .header-submenu-popup-content {display:flex; width:100%}
@@ -429,7 +429,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 }
 
 @media (max-width:1195px) {
-    .header-submenu-popup {left:auto; top:auto; right:auto; height:auto; background:none; backdrop-filter:none; position:relative}
+    .header-submenu-popup {left:auto; top:auto; right:auto; height:auto; background:none; -webkit-backdrop-filter:none; backdrop-filter:none; position:relative}
     .header-submenu-popup-container {background:none}
     .header-submenu-popup-content {display:block}
     .header-submenu-popup-content .container {display:block}
@@ -493,7 +493,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 
 .header-submenu-list {display:none; position:absolute; left:50%; top:100%; transform:translateX(-50%); padding:1px 0 0 0}
 .header-menu-item.open .header-submenu-list {display:block}
-.header-submenu-list::before {content:""; position:absolute; left:-9999px; top:0; right:-9999px; height:9999px; background:rgba(134, 174, 193, 0.2); backdrop-filter:blur(6px); border-top:1px solid #EAEAEA}
+.header-submenu-list::before {content:""; position:absolute; left:-9999px; top:0; right:-9999px; height:9999px; background:rgba(134, 174, 193, 0.2); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); border-top:1px solid #EAEAEA}
 .header-submenu-list-content {position:relative; background:#FFFFFF; padding:10px 37px 10px 17px; white-space:nowrap}
 .header-submenu-list-item a {display:flex; height:32px; align-items:center; color:#41505B}
 @media (min-width:1196px) {
@@ -595,7 +595,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .header-search-link svg {stroke:#008ECF}
 }
 
-.header-search-window {display:none; position:absolute; left:0; top:0; right:0; bottom:-1px; z-index:20; background:rgba(0, 0, 0, 0.6); backdrop-filter:blur(8px); align-items:center}
+.header-search-window {display:none; position:absolute; left:0; top:0; right:0; bottom:-1px; z-index:20; background:rgba(0, 0, 0, 0.6); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); align-items:center}
 .header-search-window .container {width:100%}
 .header-search-open .header-search-window {display:flex}
 .header-search-window-form {width:100%; display:flex; justify-content:center}
@@ -893,7 +893,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .main-geo-map-item-center.open .main-geo-map-item-center-title-soon {color:#008ECF}
     .main-geo-map-item-center.open .main-geo-map-item-center-title-soon {opacity:1}
 }
-.main-geo-map-item-popup {display:none; position:absolute; left:0; bottom:28px; width:248px; background:rgba(20, 20, 26, 0.8); backdrop-filter:blur(6px); border-radius:4px; padding:16px 16px 24px 16px; z-index:2}
+.main-geo-map-item-popup {display:none; position:absolute; left:0; bottom:28px; width:248px; background:rgba(20, 20, 26, 0.8); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); border-radius:4px; padding:16px 16px 24px 16px; z-index:2}
 .main-geo-map-item-popup.to-bottom {bottom:auto; top:100%}
 .main-geo-map-item-popup.to-left {left:auto; right:0}
 @media (min-width:768px) {
@@ -955,7 +955,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .main-geo-info-item-value {font-size:31px; line-height:36px}
     .main-geo-info-item-title {margin:4px 0 0 0; font-size:13px; line-height:20px; flex-grow:1}
     .main-geo-info-item-place {margin:22px 0 0 0}
-    .main-geo-popup-mobile {position:absolute; left:0; bottom:0; right:0; background:rgba(20, 20, 26, 0.8); backdrop-filter:blur(6px); border-radius:4px}
+    .main-geo-popup-mobile {position:absolute; left:0; top:0; right:0; background:rgba(20, 20, 26, 0.8); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); border-radius:4px}
     .main-geo-popup-mobile.open {display:block}
     .main-geo-popup-mobile-container {padding:16px 16px 24px 16px}
     .main-geo-popup-mobile-close {position:absolute; right:10px; top:10px}
@@ -1213,7 +1213,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .services-card-page-menu-inner {display:flex; border-radius:4px; background:#F0F0F0; max-width:100%; position:relative; overflow:hidden}
 @media (min-width:1196px) {
     .services-card-page-menu-inner {transition:top 0.2s}
-    .services-card-page-menu.fixed .services-card-page-menu-shadow {content:""; display:block; position:fixed; top:60px; width:100%; height:76px; background:rgba(255, 255, 255, 0.5); backdrop-filter:blur(8px); z-index:9; transition:top 0.2s}
+    .services-card-page-menu.fixed .services-card-page-menu-shadow {content:""; display:block; position:fixed; top:60px; width:100%; height:76px; background:rgba(255, 255, 255, 0.5); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); z-index:9; transition:top 0.2s}
     html.header-up .services-card-page-menu.fixed .services-card-page-menu-shadow {top:0}
     .services-card-page-menu.fixed .services-card-page-menu-inner {position:fixed; top:92px; z-index:10}
     html.header-up .services-card-page-menu.fixed .services-card-page-menu-inner {top:32px}
@@ -1295,7 +1295,6 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .services-card-calc-headers {display:flex; height:63px; border-bottom:1px solid #EBEBEB; align-items:center; font:480 20px/23px "Roboto Flex", sans-serif}
 .services-card-calc-header:nth-child(1) {width:100%}
 .services-card-calc-header:nth-child(2) {min-width:131px; max-width:131px; text-align:center}
-.services-card-calc-header:nth-child(3) {min-width:198px; max-width:198px; text-align:right}
 .services-card-calc-item {display:flex; height:63px; border-bottom:1px solid #EBEBEB; align-items:center; font:480 15px/21px "Roboto Flex", sans-serif}
 .services-card-calc-item-title {width:100%}
 .services-card-calc-item-unit {min-width:121px; max-width:121px; color:#616A71; padding:0 0 0 10px}
@@ -1312,7 +1311,6 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 @media (min-width:1196px) {
     .services-card-calc-item-count-inc:hover svg {stroke:#008ECF}
 }
-.services-card-calc-item-price {min-width:198px; max-width:198px; text-align:right}
 .services-card-calc-item-count-select {position:relative}
 .services-card-calc-item-count-select-current {color:#3A414B; display:flex; background:#F9F9F9; border-radius:4px; width:111px; height:33px; align-items:center; padding:0 8px; cursor:pointer}
 .services-card-calc-item-count-select-current svg {position:absolute; right:8px; top:50%; width:10px; height:8px; margin:-4px 0 0 0; fill:#41505B}
@@ -1328,10 +1326,6 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .services-card-calc-item-count-select-list label input:checked+span {color:#3A414B}
 .services-card-calc-item-count-select-list label span::after {content:""; position:absolute; right:14px; top:50%; width:14px; height:14px; margin-top:-7px; background:url(../images/services-card-calc-item-count-select-checked.svg) no-repeat; background-size:100%; opacity:0; transition:opacity 0.2s}
 .services-card-calc-item-count-select-list label input:checked+span::after {opacity:1}
-.services-card-calc-summ {display:flex; align-items:center; justify-content:space-between; height:110px}
-.services-card-calc-summ-title {font:480 24px/28px "Roboto Flex", sans-serif}
-.services-card-calc-summ-notice {margin:2px 0 0 0; font:480 15px/21px "Roboto Flex", sans-serif}
-.services-card-calc-summ-value {font:480 24px/28px "Roboto Flex", sans-serif}
 .services-card-calc-submit {margin:16px 0 0 0}
 .services-card-calc-submit .btn {display:flex; width:100%}
 
@@ -2348,12 +2342,12 @@ footer {margin:80px 0 0 0; background:#3A414B}
     .footer-menu > ul {column-count:1; margin:0; column-gap:0; padding:0; border-bottom:1px solid rgba(255, 255, 255, 0.08)}
     .footer-menu > ul::before {display:none}
     .footer-menu > ul > li {padding:0; border-top:1px solid rgba(255, 255, 255, 0.08); position:relative}
-    .footer-menu > ul > li > a {display:block; padding:14px 60px 14px 20px; font:600 13px/16px "Roboto Flex", sans-serif}
+    .footer-menu > ul > li > a {display:block; padding:14px 20px; font:600 13px/16px "Roboto Flex", sans-serif}
     .footer-menu > ul > li > ul {display:none; background:#252E34; margin:0; padding:0; font:600 13px/16px "Roboto Flex", sans-serif}
     .footer-menu > ul > li.open > ul {display:block}
     .footer-menu > ul > li > ul > li {margin:0; padding:8px 20px}
     .footer-menu > ul > li > ul > li.footer-menu-holding {margin:0; border-top:1px solid rgba(255, 255, 255, 0.08); padding:14px 20px}
-    .footer-menu-mobile-sublink {display:block; position:absolute; right:0; top:0; height:44px; display:flex; cursor:pointer; align-items:center; justify-content:center; width:60px}
+    .footer-menu-mobile-sublink {display:block; position:absolute; right:0; top:0; height:44px; display:flex; cursor:pointer; align-items:center; justify-content:center; width:60px; pointer-events:none}
     .footer-menu-mobile-sublink svg {width:20px; height:20px; fill:none; stroke:#FFFFFF; transition:transform 0.2s}
     .footer-menu > ul > li.open .footer-menu-mobile-sublink svg {transform:rotate(-180deg)}
 }
@@ -2381,7 +2375,7 @@ footer {margin:80px 0 0 0; background:#3A414B}
 .window-photo-open,
 .window-photo-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
 
-.window-photo {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:rgba(0, 0, 0, 0.6); backdrop-filter:blur(8px); user-select:none}
+.window-photo {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:rgba(0, 0, 0, 0.6); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); user-select:none}
 
 .window-photo-preview,
 .window-photo-preview.swiper {position:fixed; left:0; right:0; bottom:0; z-index:99; height:150px; overflow:hidden}
@@ -2454,7 +2448,7 @@ footer {margin:80px 0 0 0; background:#3A414B}
 .window-open,
 .window-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
 
-.window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:9999; background:rgba(0, 0, 0, 0.6); backdrop-filter:blur(8px); text-align:center}
+.window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:9999; background:rgba(0, 0, 0, 0.6); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); text-align:center}
 .window::after {content:""; display:inline-block; width:0; height:100%; vertical-align:middle}
 .window-loading {position:absolute; left:0; top:0; right:0; bottom:0; background:url(../images/loading.svg) no-repeat center}
 .window-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#FFFFFF; border-radius:4px; margin:30px 0; transition:opacity 0.2s}
@@ -2476,7 +2470,7 @@ footer {margin:80px 0 0 0; background:#3A414B}
 .window-video-open,
 .window-video-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
 
-.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:rgba(0, 0, 0, 0.6); backdrop-filter:blur(8px); user-select:none}
+.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:rgba(0, 0, 0, 0.6); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); user-select:none}
 
 .window-video-close {position:absolute; right:16px; top:16px; z-index:99}
 .window-video-close svg {display:block; fill:none; stroke:#FFFFFF; transition:stroke 0.2s; width:24px; height:24px}
