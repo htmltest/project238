@@ -532,7 +532,10 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .header-submenu-popup-about-news {width:100%; padding:50px 0}
 .header-submenu-popup-about-news-inner {margin:0 0 0 -18px; display:flex}
 .header-submenu-popup-about-news-item {min-width:calc(25% - 18px); max-width:calc(25% - 18px); margin:0 0 0 18px}
-.header-submenu-popup-about-news-item-preview img {display:block; width:100%}
+.header-submenu-popup-about-news-item-preview {position:relative; height:162px; overflow:hidden}
+.header-submenu-popup-about-news-item-preview img {position:absolute; left:0; top:0; width:100%; height:100%; max-width:none; object-fit:cover}
+.header-submenu-popup-about-news-item-preview-logo {position:relative}
+.header-submenu-popup-about-news-item-preview-logo::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(73.25deg, #015982 0%, rgba(0, 142, 207, 0) 177.87%)}
 .header-submenu-popup-about-news-item .title-small {margin:11px 0 0 0; color:#2E3941; transition:color 0.2s; font-size:13px; line-height:16px}
 @media (min-width:1196px) {
     .header-submenu-popup-about-news-item:hover .title-small {color:#008ECF}
@@ -1118,10 +1121,6 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .services-category-header {min-height:280px}
 }
 
-@media (max-width:1195px) {
-    .services-category-header {margin:0 -20px; padding:20px; display:block; min-height:0}
-}
-
 .services-category-header-content {max-width:628px; padding:90px 0; position:relative}
 .services-category-header .breadcrumbs {margin:0; color:rgba(255, 255, 255, 0.4)}
 .services-category-header .breadcrumbs a {color:#FFFFFF}
@@ -1159,6 +1158,38 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .services-category-header-content {max-width:none}
     .services-category-header-anonce {max-width:none}
     .services-category-header-link .btn {display:flex}
+}
+
+
+@media (max-width:1195px) {
+    .services-category-header {margin:0 -20px; padding:20px; display:block; min-height:0}
+    .services-category-header-page {display:flex; position:relative; align-items:center}
+    .services-category-header-page .services-category-header-content {position:static; margin:48px 0 78px 0}
+    .services-category-header-page .breadcrumbs {margin:0; font-size:12px; line-height:18px; position:absolute; left:20px; top:30px}
+    .services-category-header-page .breadcrumbs a {display:block}
+    .services-category-header-page .breadcrumbs svg {display:block}
+    .services-category-header-page .breadcrumbs a:last-of-type {padding:0; font-size:12px; line-height:18px}
+    .services-category-header-page .breadcrumbs a:last-of-type::before {display:none}
+    .services-category-header-page .page-title {margin:0}
+    .services-category-header-page .services-category-header-anonce {margin:8px 0 0 0}
+    .services-category-header-page .services-category-header-link {margin:0; position:absolute; left:20px; bottom:30px}
+    .services-category-header-page .services-category-header-icon {min-width:225px; max-width:225px; margin:30px 22px 30px 0}
+    .services-category-header-page .services-category-header-icon img {width:225px; height:225px}
+}
+
+@media (max-width:767px) {
+    .services-category-header-page {display:block; padding:20px 20px 96px 20px}
+    .services-category-header-page .services-category-header-content {margin:0}
+    .services-category-header-page .breadcrumbs {margin:0; font-size:0; line-height:0; position:static; left:auto; top:auto}
+    .services-category-header-page .breadcrumbs a {display:none}
+    .services-category-header-page .breadcrumbs a:last-of-type {display:block; position:relative; padding:0 0 0 18px; position:relative; font-size:13px; line-height:20px}
+    .services-category-header-page .breadcrumbs a:last-of-type::before {content:""; display:block; position:absolute; left:0; top:1px; width:17px; height:17px; background:url(../images/breadcrumbs-mobile.svg) no-repeat; background-size:100%}
+    .services-category-header-page .breadcrumbs svg {display:none}
+    .services-category-header-page .page-title {margin:24px 0 0 0}
+    .services-category-header-page .services-category-header-anonce {margin:13px 0 0 0}
+    .services-category-header-page .services-category-header-icon {min-width:176px; max-width:176px; margin:24px auto 0 auto}
+    .services-category-header-page .services-category-header-icon img {width:176px; height:176px}
+    .services-category-header-page .services-category-header-link {left:20px; bottom:36px; right:20px}
 }
 
 .services-category {margin:80px 0 0 0}
