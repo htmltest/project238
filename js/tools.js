@@ -833,7 +833,7 @@ $(document).ready(function() {
             }
         }
     });
-    
+
     $('.content-table').each(function() {
         $(this).wrap('<div class="content-table-wrap"></div>');
     });
@@ -1438,35 +1438,31 @@ function updateCenterRoute() {
 $(window).on('load', function() {
 
     $('.main-welcome-video').each(function() {
-        var newHTML =   '<div class="main-welcome-video-list">';
-        for (var i = 0; i < mainVideoImgsCount; i++) {
-            newHTML +=      '<div class="main-welcome-video-list-item"><img data-src="' + mainVideoImgsPath + (String('000' + (i + 1)).slice(-4)) + '.png" alt=""></div>';
-        }
-        newHTML +=      '</div>';
-        $('.main-welcome-video').append(newHTML);
-        var curLoad = 0;
-        $('.main-welcome-video-list-item img').one('load', function(e) {
-            curLoad++;
-            if (curLoad >= mainVideoImgsCount) {
-                mainVideoStart();
-            }
-        });
-        $('.main-welcome-video-list-item img').each(function() {
-            $(this).attr('src', $(this).attr('data-src'));
-        });
-
-        var curActive = 0;
-        function mainVideoStart() {
-            $('.main-welcome-video-list-item').eq(0).addClass('active');
+        $('.main-welcome-video').append('<div class="main-welcome-video-animate"><img src="" alt=""></div>');
+        $('.main-welcome-video-animate img').one('load', function(e) {
             $('.main-welcome-video').addClass('start');
+            mainVideoStart();
+        });
+        $('.main-welcome-video-animate img').attr('src', $('.main-welcome-video-preview img').attr('data-src'));
+
+        var curX = 0;
+        var curY = 0;
+        function mainVideoStart() {
 
             window.setInterval(function() {
-                curActive++;
-                if (curActive > mainVideoImgsCount - 1) {
-                    curActive = 0;
+                var curSize = 250;
+                if ($(window).width() < 768) {
+                    curSize = 200;
                 }
-                $('.main-welcome-video-list-item.active').removeClass('active');
-                $('.main-welcome-video-list-item').eq(curActive).addClass('active');
+                curX++;
+                if (curX >= 45) {
+                    curX = 0;
+                    curY++;
+                    if (curY >= 10) {
+                        curY = 0;
+                    }
+                }
+                $('.main-welcome-video-animate img').css({'left': -curX * curSize, 'top': -curY * curSize});
             }, 30);
         }
     });
