@@ -379,7 +379,9 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .header-submenu-open .header-menu-item .header-menu-item-parent::before {right:auto; left:20px; transform:scale(-1, 1)}
 }
 
-.header-submenu-popup {display:none; position:absolute; left:0; top:100%; right:0; height:99999px; background:rgba(134, 174, 193, 0.2); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px)}
+.header-submenu-popup {display:none; position:absolute; left:0; top:100%; right:0; height:99999px; background:rgba(134, 174, 193, 0.2)}
+.header-submenu-open .container {filter:blur(6px)}
+.header-submenu-open header .container {filter:none}
 .header-menu-item.open .header-submenu-popup {display:block}
 .header-submenu-popup-container {background:#FFFFFF; border-top:1px solid #EAEAEA}
 .header-submenu-popup-content {display:flex; width:100%}
