@@ -1438,32 +1438,34 @@ function updateCenterRoute() {
 $(window).on('load', function() {
 
     $('.main-welcome-video').each(function() {
-        $('.main-welcome-video').append('<div class="main-welcome-video-animate"><img src="" alt=""></div>');
-        $('.main-welcome-video-animate img').one('load', function(e) {
-            $('.main-welcome-video').addClass('start');
-            mainVideoStart();
-        });
-        $('.main-welcome-video-animate img').attr('src', $('.main-welcome-video-preview img').attr('data-src'));
+        if ($(window).width() > 1195) {
+            $('.main-welcome-video').append('<div class="main-welcome-video-animate"><img src="" alt=""></div>');
+            $('.main-welcome-video-animate img').one('load', function(e) {
+                $('.main-welcome-video').addClass('start');
+                mainVideoStart();
+            });
+            $('.main-welcome-video-animate img').attr('src', $('.main-welcome-video-preview img').attr('data-src'));
 
-        var curX = 0;
-        var curY = 0;
-        function mainVideoStart() {
+            var curX = 0;
+            var curY = 0;
+            function mainVideoStart() {
 
-            window.setInterval(function() {
-                var curSize = 250;
-                if ($(window).width() < 768) {
-                    curSize = 200;
-                }
-                curX++;
-                if (curX >= 45) {
-                    curX = 0;
-                    curY++;
-                    if (curY >= 10) {
-                        curY = 0;
+                window.setInterval(function() {
+                    var curSize = 250;
+                    if ($(window).width() < 768) {
+                        curSize = 200;
                     }
-                }
-                $('.main-welcome-video-animate img').css({'left': -curX * curSize, 'top': -curY * curSize});
-            }, 30);
+                    curX++;
+                    if (curX >= 45) {
+                        curX = 0;
+                        curY++;
+                        if (curY >= 10) {
+                            curY = 0;
+                        }
+                    }
+                    $('.main-welcome-video-animate img').css({'left': -curX * curSize, 'top': -curY * curSize});
+                }, 30);
+            }
         }
     });
 
