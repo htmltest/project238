@@ -641,6 +641,8 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .menu-mobile-open body {position:fixed; left:0; top:0; right:0; bottom:0; overflow:hidden}
 }
 
+.back-mobile {display:none}
+
 .breadcrumbs {margin:50px 0 0 0; display:flex; font-size:12px; line-height:18px; color:rgba(46, 57, 65, 0.5); align-items:center}
 .breadcrumbs a {color:#2E3941}
 @media (min-width:1196px) {
@@ -650,11 +652,11 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .breadcrumbs+h1 {margin:10px 0 0 0}
 
 @media (max-width:1195px) {
-    .breadcrumbs {margin:24px 0 0 0; font-size:0; line-height:0}
-    .breadcrumbs a {display:none}
-    .breadcrumbs a:last-of-type {display:block; position:relative; padding:0 0 0 18px; position:relative; font-size:13px; line-height:20px}
-    .breadcrumbs a:last-of-type::before {content:""; position:absolute; left:0; top:1px; width:17px; height:17px; background:url(../images/breadcrumbs-mobile.svg) no-repeat; background-size:100%}
-    .breadcrumbs svg {display:none}
+    .back-mobile {display:block; margin:24px 0 0 0}
+    .back-mobile a {display:block; position:relative; padding:0 0 0 18px; position:relative; font-size:13px; line-height:20px; color:#2E3941}
+    .back-mobile a::before {content:""; position:absolute; left:0; top:1px; width:17px; height:17px; background:url(../images/breadcrumbs-mobile.svg) no-repeat; background-size:100%}
+
+    .breadcrumbs {display:none}
 }
 
 .page-title {margin:10px 0 16px 0}
@@ -1147,6 +1149,8 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 
 @media (max-width:1195px) {
     .services-category-header-content {padding:0}
+    .services-category-header .back-mobile {margin:0}
+    .services-category-header .back-mobile a {color:#FFFFFF}
     .services-category-header .page-title {margin:24px 0 0 0}
     .services-category-header-anonce {margin:13px 0 0 0; font-size:16px; line-height:22px}
     .services-category-header-link {margin:24px 0 0 0}
@@ -1165,11 +1169,9 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .services-category-header {margin:0 -20px; padding:20px; display:block; min-height:0}
     .services-category-header-page {display:flex; position:relative; align-items:center}
     .services-category-header-page .services-category-header-content {position:static; margin:48px 0 78px 0}
-    .services-category-header-page .breadcrumbs {margin:0; font-size:12px; line-height:18px; position:absolute; left:20px; top:30px}
-    .services-category-header-page .breadcrumbs a {display:block}
-    .services-category-header-page .breadcrumbs svg {display:block}
-    .services-category-header-page .breadcrumbs a:last-of-type {padding:0; font-size:12px; line-height:18px}
-    .services-category-header-page .breadcrumbs a:last-of-type::before {display:none}
+    .services-category-header-page .back-mobile {margin:0; font-size:12px; line-height:18px; position:absolute; left:20px; top:30px}
+    .services-category-header-page .back-mobile a {padding:0; font-size:12px; line-height:18px}
+    .services-category-header-page .back-mobile a::before {display:none}
     .services-category-header-page .page-title {margin:0}
     .services-category-header-page .services-category-header-anonce {margin:8px 0 0 0}
     .services-category-header-page .services-category-header-link {margin:0; position:absolute; left:20px; bottom:30px}
@@ -1180,11 +1182,9 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 @media (max-width:767px) {
     .services-category-header-page {display:block; padding:20px 20px 96px 20px}
     .services-category-header-page .services-category-header-content {margin:0}
-    .services-category-header-page .breadcrumbs {margin:0; font-size:0; line-height:0; position:static; left:auto; top:auto}
-    .services-category-header-page .breadcrumbs a {display:none}
-    .services-category-header-page .breadcrumbs a:last-of-type {display:block; position:relative; padding:0 0 0 18px; position:relative; font-size:13px; line-height:20px}
-    .services-category-header-page .breadcrumbs a:last-of-type::before {content:""; display:block; position:absolute; left:0; top:1px; width:17px; height:17px; background:url(../images/breadcrumbs-mobile.svg) no-repeat; background-size:100%}
-    .services-category-header-page .breadcrumbs svg {display:none}
+    .services-category-header-page .back-mobile {margin:0; font-size:0; line-height:0; position:static; left:auto; top:auto}
+    .services-category-header-page .back-mobile a {display:block; position:relative; padding:0 0 0 18px; position:relative; font-size:13px; line-height:20px}
+    .services-category-header-page .back-mobile a::before {content:""; display:block; position:absolute; left:0; top:1px; width:17px; height:17px; background:url(../images/breadcrumbs-mobile.svg) no-repeat; background-size:100%}
     .services-category-header-page .page-title {margin:24px 0 0 0}
     .services-category-header-page .services-category-header-anonce {margin:13px 0 0 0}
     .services-category-header-page .services-category-header-icon {min-width:176px; max-width:176px; margin:24px auto 0 auto}
@@ -1665,14 +1665,15 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 @media (max-width:1195px) {
     .holding-header {margin:0 -20px; padding:0 20px}
     .holding-header-inner {height:280px}
-    .holding-header-inner .breadcrumbs {top:30px}
+    .holding-header-inner .back-mobile {position:absolute; left:0; top:30px; margin:0; color:rgba(255, 255, 255, 0.4)}
+    .holding-header-inner .back-mobile a {color:rgba(255, 255, 255, 0.9)}
     .holding-header-inner h1 {max-width:317px}
     .holding-header-logo {margin:0 23px 0 0; min-width:334px; max-width:334px}
 }
 
 @media (max-width:767px) {
     .holding-header-inner {height:auto; display:block}
-    .holding-header-inner .breadcrumbs {top:20px}
+    .holding-header-inner .back-mobile {top:20px}
     .holding-header-inner h1 {max-width:none; padding:64px 0 0 0}
     .holding-header-logo {margin:7px auto 0 auto}
 }
