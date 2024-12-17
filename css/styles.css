@@ -904,7 +904,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 @media (min-width:768px) {
     .main-geo-map-item-center.open .main-geo-map-item-popup {display:block}
 }
-.main-geo-map-item-popup-logo img {display:block}
+.main-geo-map-item-popup-logo img {display:block; width:80px}
 .main-geo-map-item-popup-title {margin:12px 0 0 0; font:480 17px/20px "Roboto Flex", sans-serif; color:#FFFFFF}
 .main-geo-map-item-popup-location {margin:2px 0 0 0; font-size:12px; line-height:18px; color:#FFFFFF}
 .main-geo-map-item-popup-title-soon {margin:2px 0 0 0; font-size:12px; line-height:18px; color:#FFFFFF; opacity:0.7}
@@ -1108,16 +1108,7 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
 .services-category-header {background:#2E3941; margin:0 -999px; padding:0 999px; display:flex; justify-content:space-between; position:relative; overflow:hidden; min-height:400px}
 .centers-detail-header {position:relative; margin:0; padding:0; min-height:0}
 .centers-detail-header-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center; background-size:cover}
-.centers-detail-header-bg::before {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:#2E3941; opacity:0.7}
-.centers-detail-header-bg::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(270deg, rgba(58, 65, 75, 0) 41.9%, #3A414B 100%)}
-.centers-detail-header-bg-innopolis::before {display:none}
-.centers-detail-header-bg-innopolis::after {background:linear-gradient(270deg, rgba(58, 65, 75, 0) 41.9%, #3A414B 100%)}
-.centers-detail-header-bg-kalinin::before {display:none}
-.centers-detail-header-bg-kalinin::after {background:linear-gradient(270deg, rgba(58, 65, 75, 0) 41.9%, #3A414B 100%)}
-.centers-detail-header-bg-storedata::before {display:none}
-.centers-detail-header-bg-storedata::after {background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)}
-.centers-detail-header-bg-moscow2::before {display:none}
-.centers-detail-header-bg-moscow2::after {background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)}
+.centers-detail-header-bg::before {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(270deg, rgba(0, 0, 0, 0) 29.61%, rgba(0, 0, 0, 0.8) 95%)}
 
 @media (max-width:1579px) {
     .services-category-header {min-height:280px}
@@ -1163,7 +1154,6 @@ header .container {display:flex; align-items:center; justify-content:space-betwe
     .services-category-header-anonce {max-width:none}
     .services-category-header-link .btn {display:flex}
 }
-
 
 @media (max-width:1195px) {
     .services-category-header {margin:0 -20px; padding:20px; display:block; min-height:0}
